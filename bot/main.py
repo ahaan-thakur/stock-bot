@@ -396,12 +396,24 @@ def dsr_parse_page(html: str) -> list[dict]:
     return items
 
 def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
+    """
+    Only in-stock items are stored in state.
+    Sold-out items are completely ignored.
+
+    Pagination strategy (newest-first sort):
+      - Keep paginating as long as we haven't seen any previously-known
+        in-stock fingerprint yet — we may still be in the "new items" zone.
+      - Once we encounter a fingerprint that was in prev state, we know
+        we've reached items from a previous run. Stop after that page.
+      - This correctly handles large restocks that spill across multiple pages.
+    """
     log.info("[DiecastSilkRoad] Starting paginated scrape (newest first)...")
     prev: dict = state.get("diecastsilkroad", {})
-    new_state: dict = dict(prev)  # start with everything we've seen before
+    new_state: dict = {}
 
     page = 1
-    max_pages = 20  # safety cap — 365 items ÷ ~24 per page ≈ 16 pages
+    max_pages = 20
+    reached_known_items = False
 
     while page <= max_pages:
         url = f"{DSR_LISTING}?{DSR_PARAMS}&page={page}"
@@ -419,55 +431,42 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
             log.info(f"  Empty page — done paginating.")
             break
 
-        all_seen_before = True  # will flip if any new fingerprint found
+        new_instock_on_page = 0
 
         for item in items:
-            fid = item["fid"]
-            prev_item = prev.get(fid)
+            if not item["in_stock"]:
+                continue  # skip sold-out entirely
 
-            # Always update state with latest snapshot
+            fid = item["fid"]
             new_state[fid] = {
-                "name":     item["name"],
-                "url":      item["url"],
-                "price":    item["price"],
-                "in_stock": item["in_stock"],
+                "name":  item["name"],
+                "url":   item["url"],
+                "price": item["price"],
             }
 
-            if item["in_stock"]:
-                if prev_item is None:
-                    # Never seen before + in stock = new stock added
-                    all_seen_before = False
-                    log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
-                    alert(token, chat_id, "🛒", "New stock added!",
-                          "Diecast Silk Road", item["name"], item["url"])
-
-                elif not prev_item.get("in_stock", False):
-                    # Previously OOS, now back in stock
-                    all_seen_before = False
-                    log.info(f"  RESTOCKED: {item['name']} ({item['price']})")
-                    alert(token, chat_id, "🔄", "Back in stock!",
-                          "Diecast Silk Road", item["name"], item["url"])
-
-                else:
-                    log.info(f"  Unchanged (in stock): {item['name']}")
-
+            if fid in prev:
+                # Hit a fingerprint we already knew — mark it but keep
+                # processing the rest of this page
+                reached_known_items = True
+                log.info(f"  Known (in stock): {item['name']}")
             else:
-                if prev_item is None:
-                    # New item but already sold out — record it, no alert
-                    all_seen_before = False
-                    log.info(f"  New item (already sold out): {item['name']}")
-                else:
-                    log.info(f"  Unchanged (sold out): {item['name']}")
+                new_instock_on_page += 1
+                log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
+                alert(token, chat_id, "🛒", "New stock added!",
+                      "Diecast Silk Road", item["name"], item["url"])
 
-        # Early exit: if every item on this page was already in state,
-        # all older pages will be too — no need to keep paginating
-        if all_seen_before and page > 1:
-            log.info(f"  All items on page {page} already known — stopping early.")
+        log.info(f"  {new_instock_on_page} new in-stock item(s) on page {page}.")
+
+        # Stop AFTER finishing this page if we've hit known items —
+        # everything on subsequent pages will be even older
+        if reached_known_items:
+            log.info(f"  Reached previously known items — stopping after page {page}.")
             break
 
         page += 1
         jitter()
 
+    log.info(f"  Total in-stock items tracked: {len(new_state)}")
     state["diecastsilkroad"] = new_state
     return state
 
