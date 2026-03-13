@@ -445,7 +445,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
     return state
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     token   = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
