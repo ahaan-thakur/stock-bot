@@ -61,22 +61,35 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
 ]
 
-def fetch(url: str) -> Optional[str]:
-    headers = {
-        "User-Agent": random.choice(USER_AGENTS),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "DNT": "1",
-        "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-    }
-    try:
-        r = requests.get(url, headers=headers, timeout=25)
-        r.raise_for_status()
-        return r.text
-    except Exception as e:
-        log.error(f"Fetch failed [{url}]: {e}")
-        return None
+def fetch(url: str, retries: int = 3) -> Optional[str]:
+    """Fetch a URL with retry + exponential backoff.
+    503/429 (rate-limited) → wait and retry. Other errors → fail immediately.
+    """
+    for attempt in range(1, retries + 1):
+        headers = {
+            "User-Agent": random.choice(USER_AGENTS),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "DNT": "1",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+        }
+        try:
+            r = requests.get(url, headers=headers, timeout=25)
+            r.raise_for_status()
+            return r.text
+        except requests.HTTPError as e:
+            status = e.response.status_code if e.response is not None else 0
+            if status in (503, 429) and attempt < retries:
+                wait = 15 * attempt   # 15s on attempt 1, 30s on attempt 2
+                log.warning(f"  {status} on attempt {attempt} — retrying in {wait}s...")
+                time.sleep(wait)
+                continue
+            log.error(f"Fetch failed [{url}]: {e}")
+            return None
+        except Exception as e:
+            log.error(f"Fetch failed [{url}]: {e}")
+            return None
 
 def jitter():
     t = random.uniform(3, 8)
@@ -445,7 +458,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
     return state
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
     token   = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
