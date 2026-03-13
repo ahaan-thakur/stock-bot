@@ -2,15 +2,14 @@ name: Stock Checker
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (GitHub minimum)
-  workflow_dispatch:         # manual trigger from Actions tab
+    - cron: "*/5 * * * *" 
+  workflow_dispatch:        
 
 jobs:
   check-stock:
     runs-on: ubuntu-latest
-    timeout-minutes: 4       # kill before next run starts
+    timeout-minutes: 4  
 
-    # Needed so the job can commit state.json back to the repo
     permissions:
       contents: write
 
@@ -45,7 +44,6 @@ jobs:
           SITE2_OOS_KEYWORD:     ${{ secrets.SITE2_OOS_KEYWORD }}
         run: python bot/checker.py
 
-      # Commit the updated state.json back so next run has fresh baseline
       - name: Commit state
         run: |
           git config user.name  "stock-bot"
