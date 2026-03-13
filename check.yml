@@ -1,0 +1,55 @@
+name: Stock Checker
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 minutes (GitHub minimum)
+  workflow_dispatch:         # manual trigger from Actions tab
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4       # kill before next run starts
+
+    # Needed so the job can commit state.json back to the repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run stock checker
+        env:
+          TELEGRAM_BOT_TOKEN:    ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:      ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE1_URL:             ${{ secrets.SITE1_URL }}
+          SITE1_CARD_SELECTOR:   ${{ secrets.SITE1_CARD_SELECTOR }}
+          SITE1_NAME_SELECTOR:   ${{ secrets.SITE1_NAME_SELECTOR }}
+          SITE1_PRICE_SELECTOR:  ${{ secrets.SITE1_PRICE_SELECTOR }}
+          SITE1_BUY_KEYWORD:     ${{ secrets.SITE1_BUY_KEYWORD }}
+          SITE1_SOON_KEYWORD:    ${{ secrets.SITE1_SOON_KEYWORD }}
+          SITE2_URL:             ${{ secrets.SITE2_URL }}
+          SITE2_CARD_SELECTOR:   ${{ secrets.SITE2_CARD_SELECTOR }}
+          SITE2_NAME_SELECTOR:   ${{ secrets.SITE2_NAME_SELECTOR }}
+          SITE2_PRICE_SELECTOR:  ${{ secrets.SITE2_PRICE_SELECTOR }}
+          SITE2_INSTOCK_KEYWORD: ${{ secrets.SITE2_INSTOCK_KEYWORD }}
+          SITE2_OOS_KEYWORD:     ${{ secrets.SITE2_OOS_KEYWORD }}
+        run: python bot/checker.py
+
+      # Commit the updated state.json back so next run has fresh baseline
+      - name: Commit state
+        run: |
+          git config user.name  "stock-bot"
+          git config user.email "stock-bot@users.noreply.github.com"
+          git add state/state.json
+          git diff --cached --quiet || git commit -m "chore: update state [skip ci]"
+          git push
