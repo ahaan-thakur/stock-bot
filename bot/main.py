@@ -1,58 +1,29 @@
 """
-Stock checker bot — dual-site edition
-======================================
+Stock checker bot
+==================
+Site 1 — karzanddolls.com  (9 category listing pages)
+  Behaviour : cards vanish when OOS, "coming soon" badge before launch
+  Alert on  : new card, coming soon → add to cart, reappeared card
 
-Site 1  (listing page — cards appear / disappear)
-  Cards vanish completely when out of stock.
-  Alerts on 3 events:
-    1. Brand-new card seen for the first time
-    2. Card status: "coming soon" → "add to cart"   (now buyable)
-    3. Previously-gone card reappears               (back in stock)
+Site 2 — diecastsilkroad.com  (paginated /collections/all)
+  Behaviour : all items always listed, stock shown via button text
+  Alert on  : item with fingerprint not seen before that is in stock
+              (catches new stock even when total count is unchanged,
+               because sold items and genuinely new items have different
+               fingerprints built from name + price + variant URL)
 
-Site 2  (stock page — URL persists, items change)
-  Items stay listed but stock availability changes.
-  Alerts on 1 event:
-    1. A new item fingerprint appears that was not seen before
-       This catches genuine new stock even when total count is unchanged
-       because sold items and new items have different fingerprints.
+Fingerprint = MD5(name + price + variant_path)
+  Same item relisted  → same fingerprint → no duplicate alert
+  Different new item  → new fingerprint  → alert fires
 
-Fingerprint strategy
-  Each item is identified by MD5( name + price + variant-text ), NOT by
-  position or total count. This means:
-    - 2 items sell, 2 different items added → count unchanged, but 2 new
-      fingerprints detected → 2 alerts fired correctly
-    - Same item relisted at same price → same fingerprint → no duplicate alert
+State persisted in state/state.json, committed back to repo each run.
 
-State persisted to state/state.json, committed back to repo each run.
-
-────────────────────────────────────────────────────────────
-GitHub Secrets
-────────────────────────────────────────────────────────────
-TELEGRAM_BOT_TOKEN      from @BotFather
-TELEGRAM_CHAT_ID        your numeric chat/group id
-
-SITE1_URL               full listing page URL
-SITE1_CARD_SELECTOR     CSS selector for a product card  e.g. .product-card
-SITE1_NAME_SELECTOR     CSS selector for name inside a card  e.g. .product-title
-SITE1_PRICE_SELECTOR    CSS selector for price inside a card (optional, improves fingerprint)
-SITE1_BUY_KEYWORD       text on the buy button   (default: add to cart)
-SITE1_SOON_KEYWORD      text on coming-soon badge (default: coming soon)
-
-SITE2_URL               full stock page URL
-SITE2_CARD_SELECTOR     CSS selector for an item row/card
-SITE2_NAME_SELECTOR     CSS selector for name inside a card
-SITE2_PRICE_SELECTOR    CSS selector for price inside a card (optional, improves fingerprint)
-SITE2_INSTOCK_KEYWORD   text that confirms in-stock   (default: add to cart)
-SITE2_OOS_KEYWORD       text that confirms out-of-stock (default: out of stock)
+Secrets required (GitHub repository secrets):
+  TELEGRAM_BOT_TOKEN
+  TELEGRAM_CHAT_ID
 """
 
-import os
-import json
-import time
-import random
-import hashlib
-import logging
-import requests
+import os, json, time, random, hashlib, logging, requests
 from pathlib import Path
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
@@ -66,47 +37,20 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 STATE_FILE = Path(__file__).parent.parent / "state" / "state.json"
+BASE_DSR   = "https://diecastsilkroad.com"
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────────
-
-def env(key: str, default: str = "") -> str:
-    return os.environ.get(key, default).strip()
-
-def fingerprint(*parts: str) -> str:
-    """
-    Stable 12-char ID built from item identity fields.
-    Same item = same fingerprint. Different item = different fingerprint.
-    """
-    raw = "|".join(p.lower().strip() for p in parts if p)
-    return hashlib.md5(raw.encode()).hexdigest()[:12]
-
-def extract_text(card: BeautifulSoup, selector: str) -> str:
-    if not selector:
-        return ""
-    el = card.select_one(selector)
-    return el.get_text(strip=True) if el else ""
-
-def extract_href(card: BeautifulSoup, base_url: str) -> str:
-    a = card.find("a", href=True)
-    if not a:
-        return base_url
-    href = a["href"]
-    return href if href.startswith("http") else urljoin(base_url, href)
-
-def best_name(card: BeautifulSoup, name_selector: str) -> str:
-    """Try the configured selector first, then fall back to first heading."""
-    name = extract_text(card, name_selector)
-    if name:
-        return name
-    for tag in ["h1", "h2", "h3", "h4", "strong", "p", "span"]:
-        el = card.find(tag)
-        if el:
-            text = el.get_text(strip=True)
-            if len(text) > 2:
-                return text[:120]
-    return card.get_text(separator=" ", strip=True)[:120]
-
+# ── karzanddolls: all 9 category pages to watch ───────────────────────────────
+KARZANDDOLLS_CATEGORIES = [
+    ("Mainlines",        "https://www.karzanddolls.com/details/hot+wheels/mainlines/MTEw"),
+    ("Pop Culture",      "https://www.karzanddolls.com/details/hot+wheels/pop-culture/MTE5"),
+    ("Card Art Premiums","https://www.karzanddolls.com/details/hot+wheels/card-art-premiums/MTE0"),
+    ("Gift Pack",        "https://www.karzanddolls.com/details/hot+wheels/gift-pack/MTE2"),
+    ("Car Culture",      "https://www.karzanddolls.com/details/hot+wheels/car-culture/MTEx"),
+    ("Boulevard Series", "https://www.karzanddolls.com/details/hot+wheels/boulevard-series/MTIw"),
+    ("Team Transport",   "https://www.karzanddolls.com/details/hot+wheels/team-transport/MTQz"),
+    ("Mini GT",          "https://www.karzanddolls.com/details/mini+gt+/mini-gt/MTY1"),
+    ("Pop Race",         "https://www.karzanddolls.com/details/pop+race/pop-race/MTc0"),
+]
 
 # ── HTTP ───────────────────────────────────────────────────────────────────────
 
@@ -134,13 +78,31 @@ def fetch(url: str) -> Optional[str]:
         log.error(f"Fetch failed [{url}]: {e}")
         return None
 
+def jitter():
+    t = random.uniform(3, 8)
+    log.info(f"  Waiting {t:.1f}s...")
+    time.sleep(t)
+
+
+# ── Fingerprint ────────────────────────────────────────────────────────────────
+
+def fingerprint(*parts: str) -> str:
+    raw = "|".join(p.lower().strip() for p in parts if p)
+    return hashlib.md5(raw.encode()).hexdigest()[:12]
+
 
 # ── Telegram ───────────────────────────────────────────────────────────────────
 
-def notify(token: str, chat_id: str, text: str):
+def alert(token: str, chat_id: str, emoji: str, headline: str,
+          category: str, name: str, url: str):
+    text = (
+        f"{emoji} <b>{headline}</b>\n"
+        f"<i>{category}</i>\n\n"
+        f"{name}\n\n"
+        f'<a href="{url}">View product</a>'
+    )
     if not token or not chat_id:
-        log.warning("Telegram not configured — printing alert locally.")
-        log.info(f"[ALERT] {text}")
+        log.info(f"[ALERT — no Telegram] {headline}: {name}")
         return
     try:
         r = requests.post(
@@ -150,16 +112,9 @@ def notify(token: str, chat_id: str, text: str):
             timeout=10,
         )
         r.raise_for_status()
-        log.info("Telegram alert sent.")
+        log.info(f"  Telegram sent: {headline} — {name}")
     except Exception as e:
-        log.error(f"Telegram failed: {e}")
-
-def alert(token: str, chat_id: str, emoji: str, headline: str, name: str, url: str):
-    notify(token, chat_id,
-        f"{emoji} <b>{headline}</b>\n\n"
-        f"{name}\n\n"
-        f'<a href="{url}">View product</a>'
-    )
+        log.error(f"  Telegram failed: {e}")
 
 
 # ── State ──────────────────────────────────────────────────────────────────────
@@ -170,8 +125,8 @@ def load_state() -> dict:
         try:
             return json.loads(STATE_FILE.read_text())
         except Exception as e:
-            log.warning(f"Could not read state file: {e} — starting fresh.")
-    return {"site1": {}, "site2": {}}
+            log.warning(f"Could not read state: {e} — starting fresh.")
+    return {"karzanddolls": {}, "diecastsilkroad": {}}
 
 def save_state(state: dict):
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -180,222 +135,321 @@ def save_state(state: dict):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  SITE 1  — listing page (cards appear / disappear)
+#  SITE 1 — karzanddolls.com
+#  Card structure (confirmed from live page):
+#    Each product is wrapped in a col/card block containing:
+#      - <h3> or heading with product name
+#      - Price text (Rs. XXXX)
+#      - "ADD TO CART" button text  → status: buyable
+#      - "COMING SOON" badge text   → status: soon
+#      - "New Arrival" badge
+#    When a page has no products: text contains
+#      "Currently There is no Product Here"
+#    Product URL: <a href="/product/category/slug/hash">
 # ══════════════════════════════════════════════════════════════════════════════
-#
-#  Per-card state shape:
-#  {
-#    "name":   "Air Jordan 1 Retro",
-#    "url":    "https://...",
-#    "status": "soon" | "buyable" | "unknown",
-#    "gone":   false
-#  }
-#
-#  Alert matrix:
-#  ┌─────────────────────────┬──────────────────────────────────┐
-#  │ Condition               │ Alert                            │
-#  ├─────────────────────────┼──────────────────────────────────┤
-#  │ New fingerprint         │ "New product listed / buyable"   │
-#  │ soon → buyable          │ "Now available to buy!"          │
-#  │ gone=True → reappears   │ "Back — add to cart / coming"    │
-#  └─────────────────────────┴──────────────────────────────────┘
 
-def site1_status(card_text: str, buy_kw: str, soon_kw: str) -> str:
-    t = card_text.lower()
-    if buy_kw in t:
+def kd_card_status(text: str) -> str:
+    t = text.lower()
+    if "add to cart" in t:
         return "buyable"
-    if soon_kw in t:
+    if "coming soon" in t:
         return "soon"
     return "unknown"
 
-def check_site1(state: dict, token: str, chat_id: str) -> dict:
-    url         = env("SITE1_URL")
-    card_sel    = env("SITE1_CARD_SELECTOR",  ".product-card")
-    name_sel    = env("SITE1_NAME_SELECTOR",  "")
-    price_sel   = env("SITE1_PRICE_SELECTOR", "")
-    buy_kw      = env("SITE1_BUY_KEYWORD",    "add to cart").lower()
-    soon_kw     = env("SITE1_SOON_KEYWORD",   "coming soon").lower()
-
-    if not url:
-        log.warning("[Site 1] SITE1_URL not set — skipping.")
-        return state
-
-    log.info(f"[Site 1] Fetching {url}")
-    html = fetch(url)
-    if html is None:
-        log.warning("[Site 1] Fetch failed — skipping.")
-        return state
-
+def kd_parse_cards(html: str, base_url: str) -> dict:
+    """
+    Returns {fingerprint: {name, url, status}} for all product cards.
+    Skips the empty-state page gracefully.
+    """
     soup = BeautifulSoup(html, "lxml")
-    cards = soup.select(card_sel)
-    log.info(f"[Site 1] Found {len(cards)} card(s) with selector '{card_sel}'")
+    page_text = soup.get_text(separator=" ").lower()
 
-    if not cards:
-        log.warning(
-            "[Site 1] No cards found. Double-check SITE1_CARD_SELECTOR "
-            "by inspecting the page source."
-        )
+    if "currently there is no product here" in page_text:
+        return {}
 
-    prev: dict = state.get("site1", {})
+    cards = {}
 
-    # Build current snapshot keyed by fingerprint
-    current: dict = {}
-    for card in cards:
-        name  = best_name(card, name_sel)
-        price = extract_text(card, price_sel)
-        href  = extract_href(card, url)
-        fid   = fingerprint(name, price)
-        text  = card.get_text(separator=" ", strip=True)
-        status = site1_status(text, buy_kw, soon_kw)
-        current[fid] = {"name": name, "url": href, "status": status, "gone": False}
+    # Products are in anchor tags pointing to /product/... paths
+    # Each product block contains a heading (product name) + price + button
+    # Strategy: find all links to /product/ and walk up to the card container
+    seen_hrefs = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "/product/" not in href:
+            continue
+        if href in seen_hrefs:
+            continue
+        seen_hrefs.add(href)
 
-    # Mark cards that have disappeared as gone (preserve them in state)
-    new_state: dict = dict(current)
-    for fid, prev_item in prev.items():
-        if fid not in current and not prev_item.get("gone", False):
-            log.info(f"[Site 1] Card gone: {prev_item['name']}")
-            new_state[fid] = {**prev_item, "gone": True}
-        elif fid not in current:
-            # Already marked gone in a previous run — keep as-is
-            new_state[fid] = prev_item
+        # Walk up to find the card container (has price + button text)
+        container = a
+        for _ in range(6):  # walk up max 6 levels
+            parent = container.parent
+            if parent is None:
+                break
+            parent_text = parent.get_text(separator=" ", strip=True).lower()
+            if "rs." in parent_text and ("add to cart" in parent_text or "coming soon" in parent_text):
+                container = parent
+                break
+            container = parent
 
-    # Diff and alert
-    for fid, item in current.items():
-        name, href, status = item["name"], item["url"], item["status"]
-        prev_item = prev.get(fid)
+        card_text = container.get_text(separator=" ", strip=True)
 
-        if prev_item is None:
-            # Brand-new fingerprint
-            log.info(f"[Site 1] NEW: {name} ({status})")
-            if status == "buyable":
-                alert(token, chat_id, "🛒", "New product — buy now!", name, href)
+        # Extract product name — find the most prominent text near the link
+        name = ""
+        for tag in ["h3", "h4", "h2", "strong", "p"]:
+            el = container.find(tag)
+            if el:
+                t = el.get_text(strip=True)
+                if len(t) > 4 and "rs." not in t.lower():
+                    name = t[:120]
+                    break
+        if not name:
+            name = a.get_text(strip=True)[:120] or href.split("/")[-1].replace("-", " ").title()[:80]
+
+        # Extract price
+        price = ""
+        for el in container.find_all(string=True):
+            if "rs." in el.lower():
+                price = el.strip()[:20]
+                break
+
+        full_url = href if href.startswith("http") else urljoin(base_url, href)
+        fid = fingerprint(name, price)
+        status = kd_card_status(card_text)
+        cards[fid] = {"name": name, "url": full_url, "status": status, "gone": False}
+
+    return cards
+
+def check_karzanddolls(state: dict, token: str, chat_id: str) -> dict:
+    prev_all: dict = state.get("karzanddolls", {})
+    new_all:  dict = {}
+
+    for cat_name, cat_url in KARZANDDOLLS_CATEGORIES:
+        log.info(f"[KarzAndDolls] Checking: {cat_name}")
+        html = fetch(cat_url)
+        if html is None:
+            log.warning(f"  Fetch failed — skipping {cat_name}.")
+            jitter()
+            continue
+
+        current = kd_parse_cards(html, cat_url)
+        log.info(f"  Found {len(current)} card(s).")
+
+        # Merge current cards into new_all, carry forward gone cards
+        for fid, item in current.items():
+            new_all[fid] = {**item, "category": cat_name}
+
+        prev = {fid: v for fid, v in prev_all.items() if v.get("category") == cat_name}
+
+        # Mark cards that disappeared as gone
+        for fid, prev_item in prev.items():
+            if fid not in current and not prev_item.get("gone", False):
+                log.info(f"  Gone: {prev_item['name']}")
+                new_all[fid] = {**prev_item, "gone": True}
+            elif fid not in current:
+                new_all[fid] = prev_item  # keep existing gone record
+
+        # Diff and alert
+        for fid, item in current.items():
+            name, url, status = item["name"], item["url"], item["status"]
+            prev_item = prev.get(fid)
+
+            if prev_item is None:
+                # Brand new card never seen before
+                log.info(f"  NEW [{status}]: {name}")
+                if status == "buyable":
+                    alert(token, chat_id, "🛒", "New product — buy now!", cat_name, name, url)
+                else:
+                    alert(token, chat_id, "👀", "New product listed", cat_name, name, url)
+
+            elif prev_item.get("gone", False):
+                # Was gone, now reappeared
+                log.info(f"  REAPPEARED [{status}]: {name}")
+                if status == "buyable":
+                    alert(token, chat_id, "🔄", "Back in stock — buy now!", cat_name, name, url)
+                else:
+                    alert(token, chat_id, "🔄", "Back — coming soon", cat_name, name, url)
+
+            elif prev_item.get("status") != "buyable" and status == "buyable":
+                # coming soon / unknown → now buyable
+                log.info(f"  NOW BUYABLE: {name}")
+                alert(token, chat_id, "🛒", "Now available to buy!", cat_name, name, url)
+
             else:
-                alert(token, chat_id, "👀", "New product listed", name, href)
+                log.info(f"  No change [{status}]: {name}")
 
-        elif prev_item.get("gone", False):
-            # Was gone, now reappeared
-            log.info(f"[Site 1] REAPPEARED: {name} ({status})")
-            if status == "buyable":
-                alert(token, chat_id, "🔄", "Back in stock — buy now!", name, href)
-            else:
-                alert(token, chat_id, "🔄", "Back — coming soon", name, href)
+        jitter()
 
-        elif prev_item.get("status") != "buyable" and status == "buyable":
-            # Status upgraded: soon/unknown → buyable
-            log.info(f"[Site 1] NOW BUYABLE: {name}")
-            alert(token, chat_id, "🛒", "Now available to buy!", name, href)
-
-        else:
-            log.info(f"[Site 1] No change: {name} ({status})")
-
-    state["site1"] = new_state
+    state["karzanddolls"] = new_all
     return state
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  SITE 2  — stock page (URL persists, items change)
+#  SITE 2 — diecastsilkroad.com  (Shopify store)
+#  Card structure (confirmed from live page):
+#    Products listed as <li> items in a grid.
+#    Each card has:
+#      - Product name in <h3> (or <h2>) heading
+#      - Link: <a href="/products/slug?variant=XXXXXXX">
+#      - Price: "Rs. XXX.00"
+#      - Stock badge: <span class="add-to-cart-text__content">
+#          "Add to cart"  → in stock
+#          "Sold out"     → out of stock
+#    Pagination: ?page=2, ?page=3 ...
+#    Total item count shown as "365 items" on the page.
+#
+#  Strategy:
+#    - Scrape pages sorted by newest (sort_by=created-descending)
+#    - Stop paginating once we've seen a page where ALL items are already
+#      in our state (means we've caught up to previously seen stock)
+#    - Fingerprint = MD5(name + price + variant_path)
+#      variant_path is the /products/slug?variant=ID portion — this ensures
+#      two variants of the same product get distinct fingerprints
 # ══════════════════════════════════════════════════════════════════════════════
-#
-#  Per-item state shape:
-#  {
-#    "name":     "Nike Dunk Low Panda",
-#    "url":      "https://...",
-#    "in_stock": true
-#  }
-#
-#  Fingerprint = MD5(name + price + variant) — NOT position or total count.
-#
-#  Alert rule:
-#    New fingerprint that is in-stock → alert
-#    Previously seen fingerprint, now in-stock when it wasn't → alert
-#    Count unchanged but fingerprints changed → correctly fires for new ones
-#
-#  What is NOT alerted:
-#    Item going out of stock (not requested)
-#    Count increasing but same fingerprints (e.g. quantity bump, not new item)
 
-def item_in_stock(card_text: str, instock_kw: str, oos_kw: str) -> bool:
-    t = card_text.lower()
-    # Out-of-stock check takes priority
-    if oos_kw and oos_kw in t:
-        return False
-    if instock_kw and instock_kw in t:
-        return True
-    # If neither keyword present, assume in-stock (item is listed, no oos marker)
-    return True
+DSR_LISTING = "https://diecastsilkroad.com/collections/all"
+DSR_PARAMS  = "sort_by=created-descending"  # newest first
 
-def check_site2(state: dict, token: str, chat_id: str) -> dict:
-    url         = env("SITE2_URL")
-    card_sel    = env("SITE2_CARD_SELECTOR",    ".product-card")
-    name_sel    = env("SITE2_NAME_SELECTOR",    "")
-    price_sel   = env("SITE2_PRICE_SELECTOR",   "")
-    instock_kw  = env("SITE2_INSTOCK_KEYWORD",  "add to cart").lower()
-    oos_kw      = env("SITE2_OOS_KEYWORD",      "out of stock").lower()
-
-    if not url:
-        log.warning("[Site 2] SITE2_URL not set — skipping.")
-        return state
-
-    log.info(f"[Site 2] Fetching {url}")
-    html = fetch(url)
-    if html is None:
-        log.warning("[Site 2] Fetch failed — skipping.")
-        return state
-
+def dsr_parse_page(html: str) -> list[dict]:
+    """Parse one page of the DSR listing. Returns list of item dicts."""
     soup = BeautifulSoup(html, "lxml")
-    cards = soup.select(card_sel)
-    log.info(f"[Site 2] Found {len(cards)} card(s) with selector '{card_sel}'")
+    items = []
 
-    if not cards:
-        log.warning(
-            "[Site 2] No cards found. Double-check SITE2_CARD_SELECTOR."
-        )
+    # Each product is in a <li> with a link to /products/
+    for li in soup.find_all("li"):
+        a = li.find("a", href=lambda h: h and "/products/" in h)
+        if not a:
+            continue
 
-    prev: dict = state.get("site2", {})
-    new_state: dict = {}
+        href = a["href"]  # e.g. /products/tomica-ferrari?variant=123
+        full_url = href if href.startswith("http") else urljoin(BASE_DSR, href)
 
-    for card in cards:
-        name     = best_name(card, name_sel)
-        price    = extract_text(card, price_sel)
-        href     = extract_href(card, url)
-        text     = card.get_text(separator=" ", strip=True)
-        fid      = fingerprint(name, price)
-        in_stock = item_in_stock(text, instock_kw, oos_kw)
+        # Name — in the <h3> (or <h2>) inside the card
+        name = ""
+        for tag in ["h3", "h2", "h4"]:
+            el = li.find(tag)
+            if el:
+                name = el.get_text(strip=True)[:150]
+                break
+        if not name:
+            name = a.get_text(strip=True)[:150]
+        if not name:
+            continue
 
-        new_state[fid] = {"name": name, "url": href, "in_stock": in_stock}
+        # Price — look for "Rs." text
+        price = ""
+        for el in li.find_all(string=True):
+            if "rs." in el.lower() or "₹" in el:
+                price = el.strip()[:20]
+                break
 
-        prev_item = prev.get(fid)
+        # Stock status — confirmed span class
+        stock_el = li.find("span", class_="add-to-cart-text__content")
+        if stock_el:
+            stock_text = stock_el.get_text(strip=True).lower()
+            in_stock = "sold out" not in stock_text
+        else:
+            # Fallback: scan card text
+            card_text = li.get_text(separator=" ").lower()
+            in_stock = "sold out" not in card_text
 
-        if in_stock:
-            if prev_item is None:
-                # Never seen before and it's in stock
-                log.info(f"[Site 2] NEW IN STOCK: {name}")
-                alert(token, chat_id, "🛒", "New stock added!", name, href)
+        # Use variant path as part of fingerprint so variants are distinct
+        variant_path = href.split("?")[0] if href else ""
+        fid = fingerprint(name, price, variant_path)
 
-            elif not prev_item.get("in_stock", False):
-                # Was out of stock, now back in stock
-                log.info(f"[Site 2] RESTOCKED: {name}")
-                alert(token, chat_id, "🔄", "Back in stock!", name, href)
+        items.append({
+            "fid":      fid,
+            "name":     name,
+            "url":      full_url,
+            "price":    price,
+            "in_stock": in_stock,
+        })
+
+    return items
+
+def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
+    log.info("[DiecastSilkRoad] Starting paginated scrape (newest first)...")
+    prev: dict = state.get("diecastsilkroad", {})
+    new_state: dict = dict(prev)  # start with everything we've seen before
+
+    page = 1
+    max_pages = 20  # safety cap — 365 items ÷ ~24 per page ≈ 16 pages
+
+    while page <= max_pages:
+        url = f"{DSR_LISTING}?{DSR_PARAMS}&page={page}"
+        log.info(f"  Page {page}: {url}")
+        html = fetch(url)
+
+        if html is None:
+            log.warning(f"  Fetch failed on page {page} — stopping.")
+            break
+
+        items = dsr_parse_page(html)
+        log.info(f"  Found {len(items)} item(s) on page {page}.")
+
+        if not items:
+            log.info(f"  Empty page — done paginating.")
+            break
+
+        all_seen_before = True  # will flip if any new fingerprint found
+
+        for item in items:
+            fid = item["fid"]
+            prev_item = prev.get(fid)
+
+            # Always update state with latest snapshot
+            new_state[fid] = {
+                "name":     item["name"],
+                "url":      item["url"],
+                "price":    item["price"],
+                "in_stock": item["in_stock"],
+            }
+
+            if item["in_stock"]:
+                if prev_item is None:
+                    # Never seen before + in stock = new stock added
+                    all_seen_before = False
+                    log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
+                    alert(token, chat_id, "🛒", "New stock added!",
+                          "Diecast Silk Road", item["name"], item["url"])
+
+                elif not prev_item.get("in_stock", False):
+                    # Previously OOS, now back in stock
+                    all_seen_before = False
+                    log.info(f"  RESTOCKED: {item['name']} ({item['price']})")
+                    alert(token, chat_id, "🔄", "Back in stock!",
+                          "Diecast Silk Road", item["name"], item["url"])
+
+                else:
+                    log.info(f"  Unchanged (in stock): {item['name']}")
 
             else:
-                log.info(f"[Site 2] Unchanged (in stock): {name}")
-        else:
-            log.info(f"[Site 2] Out of stock (no alert): {name}")
+                if prev_item is None:
+                    # New item but already sold out — record it, no alert
+                    all_seen_before = False
+                    log.info(f"  New item (already sold out): {item['name']}")
+                else:
+                    log.info(f"  Unchanged (sold out): {item['name']}")
 
-    # Log items that disappeared entirely from the page (sold out + removed)
-    for fid, prev_item in prev.items():
-        if fid not in new_state:
-            log.info(f"[Site 2] Item removed from page: {prev_item['name']}")
+        # Early exit: if every item on this page was already in state,
+        # all older pages will be too — no need to keep paginating
+        if all_seen_before and page > 1:
+            log.info(f"  All items on page {page} already known — stopping early.")
+            break
 
-    state["site2"] = new_state
+        page += 1
+        jitter()
+
+    state["diecastsilkroad"] = new_state
     return state
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    token   = env("TELEGRAM_BOT_TOKEN")
-    chat_id = env("TELEGRAM_CHAT_ID")
+    token   = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID",   "").strip()
 
     if not token or not chat_id:
         log.error("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set.")
@@ -403,14 +457,15 @@ def main():
 
     state = load_state()
 
-    check_site1(state, token, chat_id)
+    log.info("=" * 60)
+    log.info("SITE 1 — karzanddolls.com")
+    log.info("=" * 60)
+    state = check_karzanddolls(state, token, chat_id)
 
-    # Polite delay between sites
-    delay = random.uniform(4, 9)
-    log.info(f"Waiting {delay:.1f}s before site 2...")
-    time.sleep(delay)
-
-    check_site2(state, token, chat_id)
+    log.info("=" * 60)
+    log.info("SITE 2 — diecastsilkroad.com")
+    log.info("=" * 60)
+    state = check_diecastsilkroad(state, token, chat_id)
 
     save_state(state)
 
