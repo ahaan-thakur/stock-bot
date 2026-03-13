@@ -240,16 +240,35 @@ def check_karzanddolls(state: dict, token: str, chat_id: str) -> dict:
 
     for cat_name, cat_url in KARZANDDOLLS_CATEGORIES:
         log.info(f"[KarzAndDolls] Checking: {cat_name}")
-        html = fetch(cat_url)
-        if html is None:
-            log.warning(f"  Fetch failed — skipping {cat_name}.")
+
+        # Paginate through all pages for this category
+        current: dict = {}
+        page = 1
+        max_pages = 10  # safety cap
+
+        while page <= max_pages:
+            paged_url = cat_url if page == 1 else f"{cat_url}?page={page}"
+            log.info(f"  Page {page}: {paged_url}")
+            html = fetch(paged_url)
+
+            if html is None:
+                log.warning(f"  Fetch failed on page {page} — stopping pagination.")
+                break
+
+            page_cards = kd_parse_cards(html, cat_url)
+            log.info(f"  Found {len(page_cards)} card(s) on page {page}.")
+
+            if not page_cards:
+                # Empty page means we've gone past the last page
+                break
+
+            current.update(page_cards)
+            page += 1
             jitter()
-            continue
 
-        current = kd_parse_cards(html, cat_url)
-        log.info(f"  Found {len(current)} card(s).")
+        log.info(f"  Total for {cat_name}: {len(current)} card(s) across {page - 1} page(s).")
 
-        # Merge current cards into new_all, carry forward gone cards
+        # Merge current cards into new_all
         for fid, item in current.items():
             new_all[fid] = {**item, "category": cat_name}
 
@@ -269,7 +288,6 @@ def check_karzanddolls(state: dict, token: str, chat_id: str) -> dict:
             prev_item = prev.get(fid)
 
             if prev_item is None:
-                # Brand new card never seen before
                 log.info(f"  NEW [{status}]: {name}")
                 if status == "buyable":
                     alert(token, chat_id, "🛒", "New product — buy now!", cat_name, name, url)
@@ -277,7 +295,6 @@ def check_karzanddolls(state: dict, token: str, chat_id: str) -> dict:
                     alert(token, chat_id, "👀", "New product listed", cat_name, name, url)
 
             elif prev_item.get("gone", False):
-                # Was gone, now reappeared
                 log.info(f"  REAPPEARED [{status}]: {name}")
                 if status == "buyable":
                     alert(token, chat_id, "🔄", "Back in stock — buy now!", cat_name, name, url)
@@ -285,14 +302,11 @@ def check_karzanddolls(state: dict, token: str, chat_id: str) -> dict:
                     alert(token, chat_id, "🔄", "Back — coming soon", cat_name, name, url)
 
             elif prev_item.get("status") != "buyable" and status == "buyable":
-                # coming soon / unknown → now buyable
                 log.info(f"  NOW BUYABLE: {name}")
                 alert(token, chat_id, "🛒", "Now available to buy!", cat_name, name, url)
 
             else:
                 log.info(f"  No change [{status}]: {name}")
-
-        jitter()
 
     state["karzanddolls"] = new_all
     return state
