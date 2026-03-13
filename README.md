@@ -132,7 +132,7 @@ stock-bot/
 │   └── workflows/
 │       └── check.yml        ← cron schedule + state commit
 ├── bot/
-│   └── checker.py           ← scraper + diff engine + notifier
+│   └── main.py           ← scraper + diff engine + notifier
 ├── state/
 │   └── state.json           ← persisted item fingerprints (auto-updated)
 ├── requirements.txt
