@@ -2,16 +2,16 @@ name: Stock Checker
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   
-  workflow_dispatch:        
+    - cron: "*/5 * * * *"   # every 5 minutes
+  workflow_dispatch:         # manual run from Actions tab
 
 jobs:
   check-stock:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 8
 
     permissions:
-      contents: write        
+      contents: write        # needed to commit state.json back
 
     steps:
       - name: Checkout
@@ -30,7 +30,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python bot/main.py
+        run: python bot/checker.py
 
       - name: Commit updated state
         run: |
