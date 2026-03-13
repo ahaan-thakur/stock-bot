@@ -92,7 +92,7 @@ def fetch(url: str, retries: int = 3) -> Optional[str]:
             return None
 
 def jitter():
-    t = random.uniform(3, 8)
+    t = random.uniform(1, 3)
     log.info(f"  Waiting {t:.1f}s...")
     time.sleep(t)
 
