@@ -5,6 +5,10 @@ on:
   repository_dispatch:       # triggered by cron-job.org every 5 minute
     types: [run-checker]
 
+concurrency:
+  group: stock-checker
+  cancel-in-progress: true
+
 jobs:
   check-stock:
     runs-on: ubuntu-latest
