@@ -371,15 +371,17 @@ def dsr_parse_page(html: str) -> list[dict]:
                 price = el.strip()[:20]
                 break
 
-        # Stock status — confirmed span class
+        # Stock status — check both the button text AND disabled attribute
         stock_el = li.find("span", class_="add-to-cart-text__content")
+        button_el = li.find("button", class_="add-to-cart-button")
         if stock_el:
             stock_text = stock_el.get_text(strip=True).lower()
-            in_stock = "sold out" not in stock_text
+            text_says_instock = "add to cart" in stock_text
+            button_disabled = button_el.has_attr("disabled") if button_el else False
+            in_stock = text_says_instock and not button_disabled
         else:
-            # Fallback: scan card text
-            card_text = li.get_text(separator=" ").lower()
-            in_stock = "sold out" not in card_text
+            # Selector missing — default to sold out (safer than false positives)
+            in_stock = False
 
         # Use variant path as part of fingerprint so variants are distinct
         variant_path = href.split("?")[0] if href else ""
@@ -395,17 +397,17 @@ def dsr_parse_page(html: str) -> list[dict]:
 
     return items
 
+
 def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
     """
     Only in-stock items are stored in state.
     Sold-out items are completely ignored.
 
     Pagination strategy (newest-first sort):
-      - Keep paginating as long as we haven't seen any previously-known
-        in-stock fingerprint yet — we may still be in the "new items" zone.
-      - Once we encounter a fingerprint that was in prev state, we know
-        we've reached items from a previous run. Stop after that page.
-      - This correctly handles large restocks that spill across multiple pages.
+      - Always scrape all in-stock items on every page visited.
+      - Stop only when a page has BOTH: zero new in-stock items AND at least
+        one known item — meaning we've fully caught up to previous state.
+      - This ensures items on page 2+ are never missed.
     """
     log.info("[DiecastSilkRoad] Starting paginated scrape (newest first)...")
     prev: dict = state.get("diecastsilkroad", {})
@@ -413,7 +415,6 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
 
     page = 1
     max_pages = 20
-    reached_known_items = False
 
     while page <= max_pages:
         url = f"{DSR_LISTING}?{DSR_PARAMS}&page={page}"
@@ -432,6 +433,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
             break
 
         new_instock_on_page = 0
+        known_on_page = 0
 
         for item in items:
             if not item["in_stock"]:
@@ -445,9 +447,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
             }
 
             if fid in prev:
-                # Hit a fingerprint we already knew — mark it but keep
-                # processing the rest of this page
-                reached_known_items = True
+                known_on_page += 1
                 log.info(f"  Known (in stock): {item['name']}")
             else:
                 new_instock_on_page += 1
@@ -455,12 +455,12 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
                 alert(token, chat_id, "🛒", "New stock added!",
                       "Diecast Silk Road", item["name"], item["url"])
 
-        log.info(f"  {new_instock_on_page} new in-stock item(s) on page {page}.")
+        log.info(f"  {new_instock_on_page} new, {known_on_page} known in-stock item(s) on page {page}.")
 
-        # Stop AFTER finishing this page if we've hit known items —
-        # everything on subsequent pages will be even older
-        if reached_known_items:
-            log.info(f"  Reached previously known items — stopping after page {page}.")
+        # Only stop when we've found known items AND nothing new on this page —
+        # means we've fully caught up, older pages will have nothing new either
+        if known_on_page > 0 and new_instock_on_page == 0:
+            log.info(f"  Fully caught up — stopping after page {page}.")
             break
 
         page += 1
