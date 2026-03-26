@@ -136,10 +136,13 @@ def load_state() -> dict:
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     if STATE_FILE.exists():
         try:
-            return json.loads(STATE_FILE.read_text())
+            data = json.loads(STATE_FILE.read_text())
+            data.setdefault("karzanddolls", {})
+            data.setdefault("diecastsilkroad", {})
+            return data
         except Exception as e:
             log.warning(f"Could not read state: {e} — starting fresh.")
-    return {"karzanddolls": {}, "diecastsilkroad": {}}
+    return {"karzanddolls": {}, "diecastsilkroad": {}, "_baseline_done": False}
 
 def save_state(state: dict):
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -397,23 +400,20 @@ def dsr_parse_page(html: str) -> list[dict]:
 
 def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
     """
-    Only in-stock items are stored in state.
-    Sold-out items are completely ignored.
-
-    Pagination strategy (newest-first sort):
-      - Keep paginating as long as we haven't seen any previously-known
-        in-stock fingerprint yet — we may still be in the "new items" zone.
-      - Once we encounter a fingerprint that was in prev state, we know
-        we've reached items from a previous run. Stop after that page.
-      - This correctly handles large restocks that spill across multiple pages.
+    First run (baseline): silently scrape ALL pages and save state — no alerts.
+    Subsequent runs: only alert on genuinely new in-stock items.
+    Stops paginating once a page has known items and no new ones.
     """
     log.info("[DiecastSilkRoad] Starting paginated scrape (newest first)...")
     prev: dict = state.get("diecastsilkroad", {})
+    baseline_done: bool = state.get("_baseline_done", False)
     new_state: dict = {}
+
+    if not baseline_done:
+        log.info("  First run — building baseline silently (no alerts).")
 
     page = 1
     max_pages = 20
-    reached_known_items = False
 
     while page <= max_pages:
         url = f"{DSR_LISTING}?{DSR_PARAMS}&page={page}"
@@ -428,14 +428,15 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
         log.info(f"  Found {len(items)} item(s) on page {page}.")
 
         if not items:
-            log.info(f"  Empty page — done paginating.")
+            log.info("  Empty page — done paginating.")
             break
 
         new_instock_on_page = 0
+        known_on_page = 0
 
         for item in items:
             if not item["in_stock"]:
-                continue  # skip sold-out entirely
+                continue
 
             fid = item["fid"]
             new_state[fid] = {
@@ -445,29 +446,33 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
             }
 
             if fid in prev:
-                # Hit a fingerprint we already knew — mark it but keep
-                # processing the rest of this page
-                reached_known_items = True
+                known_on_page += 1
                 log.info(f"  Known (in stock): {item['name']}")
             else:
                 new_instock_on_page += 1
-                log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
-                alert(token, chat_id, "🛒", "New stock added!",
-                      "Diecast Silk Road", item["name"], item["url"])
+                if baseline_done:
+                    log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
+                    alert(token, chat_id, "🛒", "New stock added!",
+                          "Diecast Silk Road", item["name"], item["url"])
+                else:
+                    log.info(f"  Baseline — recording: {item['name']}")
 
-        log.info(f"  {new_instock_on_page} new in-stock item(s) on page {page}.")
+        log.info(f"  {new_instock_on_page} new, {known_on_page} known on page {page}.")
 
-        # Stop AFTER finishing this page if we've hit known items —
-        # everything on subsequent pages will be even older
-        if reached_known_items:
-            log.info(f"  Reached previously known items — stopping after page {page}.")
+        # Stop once we've hit known items and nothing new — fully caught up
+        if baseline_done and known_on_page > 0 and new_instock_on_page == 0:
+            log.info(f"  Fully caught up — stopping after page {page}.")
             break
 
         page += 1
-        jitter()
+        if not baseline_done:
+            time.sleep(1)  # lighter delay during baseline
+        else:
+            jitter()
 
     log.info(f"  Total in-stock items tracked: {len(new_state)}")
     state["diecastsilkroad"] = new_state
+    state["_baseline_done"] = True  # mark baseline complete after first full scrape
     return state
 
 
