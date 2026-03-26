@@ -52,6 +52,21 @@ KARZANDDOLLS_CATEGORIES = [
     ("Pop Race",         "https://www.karzanddolls.com/details/pop+race/pop-race/MTc0"),
 ]
 
+# ── Proxy ──────────────────────────────────────────────────────────────────────
+
+def build_proxies() -> Optional[dict]:
+    """Build proxy dict from env vars. Returns None if not configured."""
+    username = os.environ.get("PROXY_USERNAME", "").strip()
+    password = os.environ.get("PROXY_PASSWORD", "").strip()
+    if not username or not password:
+        log.warning("No proxy credentials set — requests will use direct connection.")
+        return None
+    proxy_url = f"http://{username}:{password}@p.webshare.io:80"
+    log.info("Proxy configured via WebShare.")
+    return {"http": proxy_url, "https": proxy_url}
+
+PROXIES = build_proxies()
+
 # ── HTTP ───────────────────────────────────────────────────────────────────────
 
 USER_AGENTS = [
@@ -63,7 +78,8 @@ USER_AGENTS = [
 
 def fetch(url: str, retries: int = 3) -> Optional[str]:
     """Fetch a URL with retry + exponential backoff.
-    503/429 (rate-limited) → wait and retry. Other errors → fail immediately.
+    Routes through WebShare proxy if credentials are set.
+    503/429 → wait and retry. Other errors → fail immediately.
     """
     for attempt in range(1, retries + 1):
         headers = {
@@ -75,13 +91,13 @@ def fetch(url: str, retries: int = 3) -> Optional[str]:
             "Upgrade-Insecure-Requests": "1",
         }
         try:
-            r = requests.get(url, headers=headers, timeout=25)
+            r = requests.get(url, headers=headers, timeout=25, proxies=PROXIES)
             r.raise_for_status()
             return r.text
         except requests.HTTPError as e:
             status = e.response.status_code if e.response is not None else 0
             if status in (503, 429) and attempt < retries:
-                wait = 15 * attempt   # 15s on attempt 1, 30s on attempt 2
+                wait = 15 * attempt
                 log.warning(f"  {status} on attempt {attempt} — retrying in {wait}s...")
                 time.sleep(wait)
                 continue
@@ -136,10 +152,14 @@ def load_state() -> dict:
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     if STATE_FILE.exists():
         try:
-            return json.loads(STATE_FILE.read_text())
+            data = json.loads(STATE_FILE.read_text())
+            # Ensure all site keys exist without wiping existing data
+            for key in ("karzanddolls", "diecastsilkroad", "giftgalaxy", "playfolio"):
+                data.setdefault(key, {})
+            return data
         except Exception as e:
             log.warning(f"Could not read state: {e} — starting fresh.")
-    return {"karzanddolls": {}, "diecastsilkroad": {}}
+    return {"karzanddolls": {}, "diecastsilkroad": {}, "giftgalaxy": {}, "playfolio": {}}
 
 def save_state(state: dict):
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -371,7 +391,7 @@ def dsr_parse_page(html: str) -> list[dict]:
                 price = el.strip()[:20]
                 break
 
-        # Stock status — check both the button text AND disabled attribute
+        # Stock status — check both button text AND disabled attribute
         stock_el = li.find("span", class_="add-to-cart-text__content")
         button_el = li.find("button", class_="add-to-cart-button")
         if stock_el:
@@ -380,8 +400,7 @@ def dsr_parse_page(html: str) -> list[dict]:
             button_disabled = button_el.has_attr("disabled") if button_el else False
             in_stock = text_says_instock and not button_disabled
         else:
-            # Selector missing — default to sold out (safer than false positives)
-            in_stock = False
+            in_stock = False  # default to sold out if selector missing
 
         # Use variant path as part of fingerprint so variants are distinct
         variant_path = href.split("?")[0] if href else ""
@@ -400,14 +419,8 @@ def dsr_parse_page(html: str) -> list[dict]:
 
 def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
     """
-    Only in-stock items are stored in state.
-    Sold-out items are completely ignored.
-
-    Pagination strategy (newest-first sort):
-      - Always scrape all in-stock items on every page visited.
-      - Stop only when a page has BOTH: zero new in-stock items AND at least
-        one known item — meaning we've fully caught up to previous state.
-      - This ensures items on page 2+ are never missed.
+    Only in-stock items stored. Sold-out ignored entirely.
+    Stops only when a page has known items AND zero new ones.
     """
     log.info("[DiecastSilkRoad] Starting paginated scrape (newest first)...")
     prev: dict = state.get("diecastsilkroad", {})
@@ -429,7 +442,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
         log.info(f"  Found {len(items)} item(s) on page {page}.")
 
         if not items:
-            log.info(f"  Empty page — done paginating.")
+            log.info("  Empty page — done paginating.")
             break
 
         new_instock_on_page = 0
@@ -437,7 +450,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
 
         for item in items:
             if not item["in_stock"]:
-                continue  # skip sold-out entirely
+                continue
 
             fid = item["fid"]
             new_state[fid] = {
@@ -455,10 +468,8 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
                 alert(token, chat_id, "🛒", "New stock added!",
                       "Diecast Silk Road", item["name"], item["url"])
 
-        log.info(f"  {new_instock_on_page} new, {known_on_page} known in-stock item(s) on page {page}.")
+        log.info(f"  {new_instock_on_page} new, {known_on_page} known on page {page}.")
 
-        # Only stop when we've found known items AND nothing new on this page —
-        # means we've fully caught up, older pages will have nothing new either
         if known_on_page > 0 and new_instock_on_page == 0:
             log.info(f"  Fully caught up — stopping after page {page}.")
             break
@@ -468,6 +479,89 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str) -> dict:
 
     log.info(f"  Total in-stock items tracked: {len(new_state)}")
     state["diecastsilkroad"] = new_state
+    return state
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  SITE 3 — giftgalaxy.in  (Shopify)
+#  SITE 4 — playfolio.in   (Shopify, two collections)
+#  Both reuse dsr_parse_page() — identical Shopify HTML structure
+# ══════════════════════════════════════════════════════════════════════════════
+
+GIFTGALAXY_LISTING = "https://www.giftgalaxy.in/collections/hotwheels"
+GIFTGALAXY_BASE    = "https://www.giftgalaxy.in"
+
+PLAYFOLIO_COLLECTIONS = [
+    ("Hot Wheels Premium", "https://playfolio.in/collections/hot-wheels-premium"),
+    ("Hot Wheels Mainline", "https://playfolio.in/collections/hot-wheels-mainline"),
+]
+
+
+def check_shopify_generic(
+    state: dict, token: str, chat_id: str,
+    state_key: str, site_label: str,
+    listing_url: str, base_url: str,
+    collection_label: str = "",
+) -> dict:
+    """Generic Shopify checker — reuses dsr_parse_page()."""
+    label = collection_label or site_label
+    log.info(f"[{site_label}] Checking: {label}")
+    prev: dict = state.get(state_key, {})
+    new_state: dict = dict(state.get(state_key, {}))  # preserve other collections
+
+    page = 1
+    max_pages = 20
+
+    while page <= max_pages:
+        url = f"{listing_url}?sort_by=created-descending&page={page}"
+        log.info(f"  Page {page}: {url}")
+        html = fetch(url)
+
+        if html is None:
+            log.warning(f"  Fetch failed on page {page} — stopping.")
+            break
+
+        items = dsr_parse_page(html)
+        log.info(f"  Found {len(items)} item(s) on page {page}.")
+
+        if not items:
+            log.info("  Empty page — done paginating.")
+            break
+
+        new_instock_on_page = 0
+        known_on_page = 0
+
+        for item in items:
+            if not item["in_stock"]:
+                continue
+
+            fid = item["fid"]
+            new_state[fid] = {
+                "name":  item["name"],
+                "url":   item["url"] if item["url"].startswith("http") else urljoin(base_url, item["url"]),
+                "price": item["price"],
+            }
+
+            if fid in prev:
+                known_on_page += 1
+                log.info(f"  Known (in stock): {item['name']}")
+            else:
+                new_instock_on_page += 1
+                log.info(f"  NEW IN STOCK: {item['name']} ({item['price']})")
+                alert(token, chat_id, "🛒", "New stock added!",
+                      label, item["name"], item["url"])
+
+        log.info(f"  {new_instock_on_page} new, {known_on_page} known on page {page}.")
+
+        if known_on_page > 0 and new_instock_on_page == 0:
+            log.info(f"  Fully caught up — stopping after page {page}.")
+            break
+
+        page += 1
+        jitter()
+
+    log.info(f"  Total in-stock items tracked: {len(new_state)}")
+    state[state_key] = new_state
     return state
 
 
@@ -492,6 +586,31 @@ def main():
     log.info("SITE 2 — diecastsilkroad.com")
     log.info("=" * 60)
     state = check_diecastsilkroad(state, token, chat_id)
+
+    log.info("=" * 60)
+    log.info("SITE 3 — giftgalaxy.in")
+    log.info("=" * 60)
+    state = check_shopify_generic(
+        state, token, chat_id,
+        state_key="giftgalaxy",
+        site_label="GiftGalaxy",
+        listing_url=GIFTGALAXY_LISTING,
+        base_url=GIFTGALAXY_BASE,
+    )
+
+    log.info("=" * 60)
+    log.info("SITE 4 — playfolio.in")
+    log.info("=" * 60)
+    for col_label, col_url in PLAYFOLIO_COLLECTIONS:
+        state = check_shopify_generic(
+            state, token, chat_id,
+            state_key="playfolio",
+            site_label="Playfolio",
+            listing_url=col_url,
+            base_url="https://playfolio.in",
+            collection_label=col_label,
+        )
+        jitter()
 
     save_state(state)
 
