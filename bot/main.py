@@ -374,16 +374,13 @@ def dsr_parse_page(html: str) -> list[dict]:
                 price = el.strip()[:20]
                 break
 
-        # Stock status — confirmed span class
-        stock_el = li.find("span", class_="add-to-cart-text__content")
-        button_el = li.find("button", class_="add-to-cart-button")
-        if stock_el:
-            stock_text = stock_el.get_text(strip=True).lower()
-            text_says_instock = "add to cart" in stock_text
-            button_disabled = button_el.has_attr("disabled") if button_el else False
-            in_stock = text_says_instock and not button_disabled
-        else:
-            in_stock = False
+        badge_el = li.find("div", class_=lambda c: c and "product-badges__badge" in c)
+        badge_sold_out = badge_el and "sold out" in badge_el.get_text(strip=True).lower() if badge_el else False
+
+        button_el = li.find("button", attrs={"name": "add"})
+        button_disabled = button_el.has_attr("disabled") if button_el else False
+
+        in_stock = not badge_sold_out and not button_disabled
 
         # Use variant path as part of fingerprint so variants are distinct
         variant_path = href.split("?")[0] if href else ""
