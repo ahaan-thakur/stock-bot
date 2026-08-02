@@ -2,6 +2,11 @@ name: Stock Checker
 
 on:
   workflow_dispatch:         # manual run from Actions tab
+    inputs:
+      seed_mode:
+        description: "Rebuild state from a live scrape without sending Telegram alerts (one-off baseline reset)"
+        type: boolean
+        default: false
   repository_dispatch:       # triggered by cron-job.org every 5 minute
     types: [run-checker]
 
@@ -34,6 +39,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEED_MODE:          ${{ github.event.inputs.seed_mode || 'false' }}
         run: python bot/main.py
 
       - name: Commit updated state
