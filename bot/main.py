@@ -454,7 +454,7 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str, dry_run: bool =
     new_state: dict = {}
 
     page = 1
-    max_pages = 20
+    max_pages = 60 if dry_run else 20
     reached_known_items = False
 
     while page <= max_pages:
@@ -500,8 +500,11 @@ def check_diecastsilkroad(state: dict, token: str, chat_id: str, dry_run: bool =
         log.info(f"  {new_instock_on_page} new in-stock item(s) on page {page}.")
 
         # Stop AFTER finishing this page if we've hit known items —
-        # everything on subsequent pages will be even older
-        if reached_known_items:
+        # everything on subsequent pages will be even older.
+        # SKIPPED during seed mode: the old state this relies on is exactly
+        # what we're trying to rebuild, so a coincidental match shouldn't
+        # cut the scan short. Seed runs scan every page up to max_pages.
+        if reached_known_items and not dry_run:
             log.info(f"  Reached previously known items — stopping after page {page}.")
             break
 

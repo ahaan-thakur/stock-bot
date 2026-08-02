@@ -17,7 +17,7 @@ concurrency:
 jobs:
   check-stock:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
 
     permissions:
       contents: write        # needed to commit state.json back
