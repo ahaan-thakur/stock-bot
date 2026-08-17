@@ -2690,9 +2690,19 @@
     }
   },
   "diecastsilkroad": {
-    "36e2345b172c": {
+    "ed3f0d463558": {
+      "name": "Nissan GT-R (R35) LB\u2605WORKS - Type 1 Custom Ducktail Auto Finesse",
+      "url": "https://diecastsilkroad.com/products/nissan-gt-r-r35-lb-works-type-1-custom-ducktail-auto-finesse?variant=60077069729873",
+      "price": "\u20b9 1,449"
+    },
+    "a66a58c10961": {
       "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing - 2025 IMSA Chevrolet Grand Prix Class Winner",
-      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-gt3-evo2-45-wayne-taylor-racing-2025-imsa-gtd-class-winner?variant=60076260655185",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-gt3-evo2-45-wayne-taylor-racing-imsa-class-winner-blister?variant=60077041647697",
+      "price": "\u20b9 1,699"
+    },
+    "c8531d01ef56": {
+      "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing - 2025 IMSA Chevrolet Grand Prix Class Winner",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-gt3-evo2-45-wayne-taylor-racing-imsa-class-winner-box?variant=60076260655185",
       "price": "\u20b9 1,549"
     },
     "6c7e4c482a2a": {
@@ -2793,16 +2803,6 @@
     "7fadf4cc5f84": {
       "name": "Honda Civic (EF) Kaido Works HKS",
       "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-honda-civic-ef-kaido-works-hks?variant=60015051210833",
-      "price": "\u20b9 1,999"
-    },
-    "d3fdf6e2d1b1": {
-      "name": "Nissan Skyline GT-R R34 Kaido House Flames V1",
-      "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-nissan-skyline-gt-r-r34-flames-v1?variant=60015021883473",
-      "price": "\u20b9 1,999"
-    },
-    "b3a557d1ec42": {
-      "name": "BMW M3 KH REDBORO",
-      "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-bmw-m3-kh-redboro?variant=60015020179537",
       "price": "\u20b9 1,999"
     },
     "44904d728fa2": {
