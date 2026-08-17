@@ -2690,36 +2690,6 @@
     }
   },
   "diecastsilkroad": {
-    "36e2345b172c": {
-      "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing - 2025 IMSA Chevrolet Grand Prix Class Winner",
-      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-gt3-evo2-45-wayne-taylor-racing-2025-imsa-gtd-class-winner?variant=60076260655185",
-      "price": "\u20b9 1,549"
-    },
-    "6c7e4c482a2a": {
-      "name": "Mercedes-AMG EQS 53 - Gold",
-      "url": "https://diecastsilkroad.com/products/minigt-mercedes-amg-eqs-53-gold?variant=60076260491345",
-      "price": "\u20b9 1,249"
-    },
-    "1070535d4dae": {
-      "name": "Lancia Delta HF Integrale Evoluzione #5 - 1993 Rallye",
-      "url": "https://diecastsilkroad.com/products/minigt-lancia-delta-hf-integrale-evoluzione-5-1993-rallye?variant=60076260327505",
-      "price": "\u20b9 1,299"
-    },
-    "68d795077ef9": {
-      "name": "Mazda Miata MX-5 (ND) Pandem - Kodo Red",
-      "url": "https://diecastsilkroad.com/products/minigt-mazda-miata-mx-5-nd-pandem-kodo-red?variant=60076259835985",
-      "price": "\u20b9 1,249"
-    },
-    "71660e29f71f": {
-      "name": "Lamborghini Countach LP500S - White",
-      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-countach-lp500s-white?variant=60076257574993",
-      "price": "\u20b9 1,249"
-    },
-    "51fea34b84c5": {
-      "name": "Nissan GT-R (R35) LB\u2605WORKS - Type 1 Custom Ducktail Auto Finesse",
-      "url": "https://diecastsilkroad.com/products/minigt-nissan-gt-r-r35-lb-works-type-1-custom-ducktail-auto-finesse?variant=60076249153617",
-      "price": "\u20b9 1,299"
-    },
     "e210ad81345b": {
       "name": "Porsche 911 GT3 (992) - Yellow/Black",
       "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-992-yellow-black?variant=60041406021713",
@@ -2804,6 +2774,31 @@
       "name": "BMW M3 KH REDBORO",
       "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-bmw-m3-kh-redboro?variant=60015020179537",
       "price": "\u20b9 1,999"
+    },
+    "b1e1bc87bc6f": {
+      "name": "FORD GT GTE PRO - LE MANS 24H 2019",
+      "url": "https://diecastsilkroad.com/products/pop-race-ford-gt-gte-pro-le-mans-24h-2019?variant=60014765080657",
+      "price": "\u20b9 1,799"
+    },
+    "8b6d30ad0d13": {
+      "name": "PANDEM LOTUS ELISE - GREEN",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-lotus-elise-green?variant=60014739783761",
+      "price": "\u20b9 1,699"
+    },
+    "b5c300e6047b": {
+      "name": "EVA RT TEST TYPE-01 AMG GT3 EVO - MACAU GP 2023",
+      "url": "https://diecastsilkroad.com/products/pop-race-eva-rt-test-type-01-amg-gt3-evo-macau-gp-2023?variant=60014731624529",
+      "price": "\u20b9 1,799"
+    },
+    "2cd4341ccb51": {
+      "name": "Range Rover 1971 British Trans-Americas Expedition",
+      "url": "https://diecastsilkroad.com/products/range-rover-1971-british-trans-americas-expedition?variant=60012215402577",
+      "price": "\u20b9 1,549"
+    },
+    "063f657835f0": {
+      "name": "Pagani Zonda Revoluci\u00f3n",
+      "url": "https://diecastsilkroad.com/products/lcd-models-pagani-zonda-revolucion-carbon-black?variant=59983971188817",
+      "price": "\u20b9 2,799"
     },
     "44904d728fa2": {
       "name": "'84 Mustang SVO",
