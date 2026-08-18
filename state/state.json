@@ -2690,11 +2690,6 @@
     }
   },
   "diecastsilkroad": {
-    "ec3d6056e795": {
-      "name": "Volkswagen Type II (T1) Panel Van - Lilo & Stitch",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-volkswagen-t1-panel-van-lilo-and-stitch?variant=60080582295633",
-      "price": "\u20b9 2,049"
-    },
     "ed3f0d463558": {
       "name": "Nissan GT-R (R35) LB\u2605WORKS - Type 1 Custom Ducktail Auto Finesse",
       "url": "https://diecastsilkroad.com/products/nissan-gt-r-r35-lb-works-type-1-custom-ducktail-auto-finesse?variant=60077069729873",
@@ -2804,6 +2799,11 @@
       "name": "KAIDO STAR-TASTIC V1",
       "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-kaido-star-tastic-v1?variant=60015053570129",
       "price": "\u20b9 2,149"
+    },
+    "7fadf4cc5f84": {
+      "name": "Honda Civic (EF) Kaido Works HKS",
+      "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-honda-civic-ef-kaido-works-hks?variant=60015051210833",
+      "price": "\u20b9 1,999"
     },
     "44904d728fa2": {
       "name": "'84 Mustang SVO",
