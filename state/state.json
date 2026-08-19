@@ -2690,11 +2690,6 @@
     }
   },
   "diecastsilkroad": {
-    "69c2eb20282a": {
-      "name": "Elite 64 - Mercedes-Benz G 63 AMG 6x6",
-      "url": "https://diecastsilkroad.com/products/hot-wheels-elite-64-mercedes-benz-g-63-amg-6x6?variant=60100124377169",
-      "price": "\u20b9 2,799"
-    },
     "85b59b4c1324": {
       "name": "Pagani Imola - Red Alloy - Full Open",
       "url": "https://diecastsilkroad.com/products/lcd-models-pagani-imola-red-full-open-1-43?variant=60099367272529",
@@ -2712,7 +2707,7 @@
     },
     "9c0ce8671c02": {
       "name": "LB-KAIDO WORKS R32 Skyline - Buzz Lightyear",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-buzz-lightyear?variant=60098977267793",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-buzz-lightyear?variant=60098977235025",
       "price": "\u20b9 2,399"
     },
     "d47a07e4a11a": {
@@ -2809,6 +2804,11 @@
       "name": "Mitsubishi Lancer RS Evolution IV - White",
       "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-rs-evolution-iv-white-blister?variant=60041383182417",
       "price": "\u20b9 1,249"
+    },
+    "8614858f6921": {
+      "name": "Mitsubishi Lancer RS Evolution IV - White",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-rs-evolution-iv-white-box?variant=60041382821969",
+      "price": "\u20b9 1,149"
     },
     "44904d728fa2": {
       "name": "'84 Mustang SVO",
