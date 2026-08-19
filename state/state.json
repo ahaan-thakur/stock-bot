@@ -2690,16 +2690,6 @@
     }
   },
   "diecastsilkroad": {
-    "d47a07e4a11a": {
-      "name": "LB-KAIDO WORKS Nissan R32 Skyline - CLDC Special",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-cldc-special-liberty-walk?variant=60098859106385",
-      "price": "\u20b9 2,699"
-    },
-    "e2316680909d": {
-      "name": "UD LB\u2011Trucks Quon Head Red/White Livery",
-      "url": "https://diecastsilkroad.com/products/gcd-ud-quon-head-lb-trucks-liberty-walk-red-white?variant=60098745630801",
-      "price": "\u20b9 5,299"
-    },
     "ec3d6056e795": {
       "name": "Volkswagen Type II (T1) Panel Van - Lilo & Stitch",
       "url": "https://diecastsilkroad.com/products/tarmac-works-volkswagen-t1-panel-van-lilo-and-stitch?variant=60080582295633",
@@ -2809,6 +2799,11 @@
       "name": "Kimera EVO38 - Red",
       "url": "https://diecastsilkroad.com/products/tarmac-works-kimera-evo38-red-box?variant=60041318170705",
       "price": "\u20b9 1,249"
+    },
+    "411674c964ed": {
+      "name": "KAIDO STAR-TASTIC V1",
+      "url": "https://diecastsilkroad.com/products/kaido-house-mini-gt-kaido-star-tastic-v1?variant=60015053570129",
+      "price": "\u20b9 2,149"
     },
     "44904d728fa2": {
       "name": "'84 Mustang SVO",
