@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "429cf8d77e14": {
+      "name": "CLK-GTR - Raw Metal - HKTCS 2026 Exclusive",
+      "url": "https://diecastsilkroad.com/products/pop-race-mercedes-benz-clk-gtr-raw-metal-hong-kong-toycar-salon-2026?variant=60197725339729",
+      "price": "\u20b9 3,499"
+    },
     "07e4edcaa7fe": {
       "name": "Lamborghini Huracan GT3 EVO2 - GTWCA Indonesia 2026 #29",
       "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-gtwca-indonesia-2026-29?variant=60112721018961",
@@ -2764,11 +2769,6 @@
       "name": "Porsche 911 GT3 (992) - Yellow/Black",
       "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-992-yellow-black?variant=60041406021713",
       "price": "\u20b9 2,649"
-    },
-    "b467e126c527": {
-      "name": "Nissan Skyline 2000GT-R (KPGC110) - Red",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-2000gt-r-kpgc110-kenmeri-red-blister?variant=60041405726801",
-      "price": "\u20b9 1,249"
     },
     "44904d728fa2": {
       "name": "'84 Mustang SVO",
