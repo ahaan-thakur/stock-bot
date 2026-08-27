@@ -2689,78 +2689,7 @@
       "category": "Pop Race"
     }
   },
-  "diecastsilkroad": {
-    "ae114b4e579e": {
-      "name": "LB-WORKS TOYOTA SUPRA (A90) - Red",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-red?variant=60205495386193",
-      "price": "\u20b9 2,549"
-    },
-    "69274e623fd0": {
-      "name": "LB-WORKS TOYOTA SUPRA (A90) - Black",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-black?variant=60205468483665",
-      "price": "\u20b9 2,549"
-    },
-    "86185152bf5e": {
-      "name": "Mercedes-AMG GT3 24h of SPA - 2022 Winner",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt3-spa-24h-2022-winner?variant=60205461012561",
-      "price": "\u20b9 2,099"
-    },
-    "278f03f30416": {
-      "name": "Porsche 911 GT3 R 24h of Le Mans 2025 - Winner of LMGT3",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-le-mans-24h-2025-lmgt3-winner?variant=60205460619345",
-      "price": "\u20b9 2,099"
-    },
-    "af9a2bb6e283": {
-      "name": "Toyota GR YARIS Rally1 HYBRID - Safari Rally Kenya 2024 Winner",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally1-hybrid-safari-rally-kenya-2024-winner?variant=60205460324433",
-      "price": "\u20b9 2,099"
-    },
-    "3b797df7fd1a": {
-      "name": "Porsche 911 GT3 Cup (992) - Porsche Carrera Cup Australia 2025",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-cup-992-carrera-cup-australia-2025?variant=60205459472465",
-      "price": "\u20b9 2,349"
-    },
-    "6aed95408cdd": {
-      "name": "Pandem Mazda RX-7 FC3S Watanabe",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-pandem-mazda-rx-7-fc3s-watanabe?variant=60205456785489",
-      "price": "\u20b9 2,099"
-    },
-    "aba7b3ca2d07": {
-      "name": "LB-KAIDO WORKS Nissan R32 Skyline Tarmac - Model Car + Trading Cards Combo Set",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-trading-cards-combo-set?variant=60205456556113",
-      "price": "\u20b9 2,949"
-    },
-    "429cf8d77e14": {
-      "name": "CLK-GTR - Raw Metal - HKTCS 2026 Exclusive",
-      "url": "https://diecastsilkroad.com/products/pop-race-mercedes-benz-clk-gtr-raw-metal-hong-kong-toycar-salon-2026?variant=60197725339729",
-      "price": "\u20b9 3,499"
-    },
-    "07e4edcaa7fe": {
-      "name": "Lamborghini Huracan GT3 EVO2 - GTWCA Indonesia 2026 #29",
-      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-gtwca-indonesia-2026-29?variant=60112721018961",
-      "price": "\u20b9 1,749"
-    },
-    "5e85de5aec9e": {
-      "name": "Lamborghini Huracan GT3 EVO2 - DTM 2023 #19",
-      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-dtm-2023-19?variant=60112648175697",
-      "price": "\u20b9 1,749"
-    },
-    "c9a92e894d44": {
-      "name": "Bugatti Tourbillon - Dore",
-      "url": "https://diecastsilkroad.com/products/trends-hobby-bugatti-tourbillon-dore?variant=60112575725649",
-      "price": "\u20b9 1,349"
-    },
-    "9753c8bc3c32": {
-      "name": "Bugatti Tourbillon - Blue Atlantic",
-      "url": "https://diecastsilkroad.com/products/trends-hobby-bugatti-tourbillon-blue-atlantic?variant=60112550428753",
-      "price": "\u20b9 1,349"
-    },
-    "9c0ce8671c02": {
-      "name": "LB-KAIDO WORKS R32 Skyline - Buzz Lightyear",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-buzz-lightyear?variant=60098977267793",
-      "price": "\u20b9 2,399"
-    }
-  },
+  "diecastsilkroad": {},
   "_baseline_done": true,
   "_fprint_migrated": true
 }
