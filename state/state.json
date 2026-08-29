@@ -2690,6 +2690,36 @@
     }
   },
   "diecastsilkroad": {
+    "cf69d7cf6ba8": {
+      "name": "HONDA CIVIC (EF9) #15 JTC 1991 InterTEC",
+      "url": "https://diecastsilkroad.com/products/pop-race-honda-civic-ef9-15-jtc-1991-intertec?variant=60235352965201",
+      "price": "\u20b9 1,699"
+    },
+    "e7f2493b3ad3": {
+      "name": "PANDEM E30 ENEOS",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-bmw-e30-eneos?variant=60235296374865",
+      "price": "\u20b9 1,699"
+    },
+    "b1a3894e9b63": {
+      "name": "LB SUPER SILHOUETTE RX7 (FD3S)",
+      "url": "https://diecastsilkroad.com/products/pop-race-lb-super-silhouette-mazda-rx-7-fd3s?variant=60235278123089",
+      "price": "\u20b9 1,799"
+    },
+    "f5c9a940ef36": {
+      "name": "PANDEM GR 86 MOONTECH",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-toyota-gr-86-moontech?variant=60235275960401",
+      "price": "\u20b9 1,699"
+    },
+    "6d2c4b84ef1e": {
+      "name": "Porsche 911 GT1 #25 - 2nd - Le Mans 24H - 1998",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-911-gt1-25-2nd-le-mans-24h-1998?variant=60235265933393",
+      "price": "\u20b9 2,249"
+    },
+    "46f1a84c69fa": {
+      "name": "Porsche 911 GT1 #26 - Winner - Le Mans 24H - 1998",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-911-gt1-26-winner-le-mans-24h-1998?variant=60235264393297",
+      "price": "\u20b9 2,249"
+    },
     "ae114b4e579e": {
       "name": "LB-WORKS TOYOTA SUPRA (A90) - Red",
       "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-red?variant=60205495386193",
@@ -2749,11 +2779,6 @@
       "name": "Bugatti Tourbillon - Blue Atlantic",
       "url": "https://diecastsilkroad.com/products/trends-hobby-bugatti-tourbillon-blue-atlantic?variant=60112550428753",
       "price": "\u20b9 1,349"
-    },
-    "9c0ce8671c02": {
-      "name": "LB-KAIDO WORKS R32 Skyline - Buzz Lightyear",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-buzz-lightyear?variant=60098977267793",
-      "price": "\u20b9 2,399"
     }
   },
   "_baseline_done": true,
