@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "704f96aecb38": {
+      "name": "Mr Bean's MINI Set - Model Car+Sofa+Figure",
+      "url": "https://diecastsilkroad.com/products/tiny-mr-beans-mini-set-sofa-figure-1-50?variant=60428401836113",
+      "price": "\u20b9 1,899"
+    },
     "646881df7ea4": {
       "name": "Porsche 992 GT3 R - Sepang Blue-White Livery #911",
       "url": "https://diecastsilkroad.com/products/almost-real-porsche-992-gt3-r-sepang-blue-white-911?variant=60427801690193",
@@ -2724,11 +2729,6 @@
       "name": "Nissan Skyline GT-R (R33) Kaido Stock Car V1",
       "url": "https://diecastsilkroad.com/products/nissan-skyline-gt-r-r33-kaido-stock-car-v1?variant=60419002597457",
       "price": "\u20b9 1,999"
-    },
-    "c7ea45eec6a5": {
-      "name": "Volkswagen ID.Buzz - DHL Electric",
-      "url": "https://diecastsilkroad.com/products/minigt-volkswagen-id-buzz-dhl-electric?variant=60259355951185",
-      "price": "\u20b9 1,349"
     }
   },
   "_baseline_done": true,
