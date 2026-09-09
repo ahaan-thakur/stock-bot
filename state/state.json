@@ -2690,35 +2690,50 @@
     }
   },
   "diecastsilkroad": {
+    "80b421b37fea": {
+      "name": "WILLIAMS RENAULT FW16 - AYRTON SENNA - TEST PAUL RICARD 02.03.1994",
+      "url": "https://diecastsilkroad.com/products/minichamps-williams-renault-fw16-ayrton-senna-paul-ricard-test-1994?variant=60483336044625",
+      "price": "\u20b9 2,899"
+    },
+    "dfb406eaf7c5": {
+      "name": "RED BULL RACING HONDA  RB16B - MAX VERSTAPPEN - 2ND - TURKISH GP 2021",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb16b-max-verstappen-2nd-turkish-gp-2021?variant=60483321036881",
+      "price": "\u20b9 3,149"
+    },
+    "f42ac086d9e7": {
+      "name": "RED BULL RACING TAG HEUER RB12 - VERSTAPPEN - 2016 Spanish GP Winner",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-max-verstappen-spanish-gp-2016-winner?variant=60483284861009",
+      "price": "\u20b9 3,149"
+    },
+    "58021fb33d9d": {
+      "name": "RED BULL RACING TAG HEUER RB12 - DANIEL RICCIARDO - SPANISH GP 2016",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-daniel-ricciardo-spanish-gp-2016?variant=60483216179281",
+      "price": "\u20b9 3,149"
+    },
     "8831ba688a1b": {
       "name": "Porsche 911 GT3 R 2026 - GT World Challenge Asia - Mandalika #911",
       "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-mandalika-911-gt-world-challenge-asia-2026?variant=60482959016017",
       "price": "\u20b9 2,499"
     },
-    "c8acd2500707": {
-      "name": "Chevrolet Camaro Kaido Racing Team V1",
-      "url": "https://diecastsilkroad.com/products/chevrolet-camaro-kaido-racing-team-v1?variant=60420221141073",
-      "price": "\u20b9 2,099"
+    "7d83bff3daa4": {
+      "name": "RWB 997 GT3 - White alloy",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-gt3-white-alloy-porsche-911-widebody?variant=60482837119057",
+      "price": "\u20b9 2,399"
     },
-    "bb9a1860db54": {
-      "name": "Nissan Fairlady Z Kaido GT GULF V1",
-      "url": "https://diecastsilkroad.com/products/nissan-fairlady-z-kaido-gt-gulf-v1?variant=60419991994449",
-      "price": "\u20b9 1,999"
+    "5f91d275666e": {
+      "name": "RWB 997 - Black Alloy",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-black-alloy-porsche-911-widebody?variant=60482748710993",
+      "price": "\u20b9 2,399"
     },
-    "9c8b61e21dfc": {
-      "name": "Nissan Skyline GT-R (R34) TAMIYA x KAIDO HOUSE \"The Hornet\" [Read Product Description]",
-      "url": "https://diecastsilkroad.com/products/case-nissan-skyline-gt-r-r34-tamiya-x-kaido-house-the-hornet?variant=60419589734481",
-      "price": "\u20b9 45,600"
+    "693ed9b9b8ca": {
+      "name": "Nissan Skyline GT-R Mine\u2018s (R34) - White",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-white?variant=60482727739473",
+      "price": "\u20b9 2,399"
     },
-    "49f0ebf67f94": {
-      "name": "Nissan Skyline GT-R (R34) TAMIYA x KAIDO HOUSE \"The Hornet\"",
-      "url": "https://diecastsilkroad.com/products/nissan-skyline-gt-r-r34-tamiya-x-kaido-house-the-hornet?variant=60419245899857",
-      "price": "\u20b9 1,999"
-    },
-    "ade781759b39": {
-      "name": "Nissan Skyline GT-R (R33) Kaido Stock Car V1",
-      "url": "https://diecastsilkroad.com/products/nissan-skyline-gt-r-r33-kaido-stock-car-v1?variant=60419002597457",
-      "price": "\u20b9 1,999"
+    "a544aec77c53": {
+      "name": "Nissan Skyline GT-R Mine\u2018s (R34) - Blue Metallic",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-blue-metallic?variant=60482683076689",
+      "price": "\u20b9 2,399"
     }
   },
   "_baseline_done": true,
