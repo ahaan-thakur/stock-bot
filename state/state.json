@@ -2690,6 +2690,46 @@
     }
   },
   "diecastsilkroad": {
+    "a98c99c0f6cb": {
+      "name": "Datsun Bluebird SSS (510) - Formosa",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-datsun-bluebird-sss-510-formosa?variant=60504866652241",
+      "price": "\u20b9 2,199"
+    },
+    "d4f9c06f4953": {
+      "name": "Hyundai i20 N Rally1 Hybrid - Rally Sweden 2023",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-hyundai-i20-n-rally1-hybrid-rally-sweden-2023?variant=60504759140433",
+      "price": "\u20b9 2,099"
+    },
+    "9e8e7a58900f": {
+      "name": "Porsche 911 GT3 R Suzuka 1000km - Intercontinental GT Challenge 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-suzuka-1000km-igtc-2025?variant=60504637603921",
+      "price": "\u20b9 2,099"
+    },
+    "77537bc5187e": {
+      "name": "Mercedes-AMG GT3 - Bathurst 12h 2024",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt3-bathurst-12h-2024?variant=60504446009425",
+      "price": "\u20b9 2,099"
+    },
+    "fe857905b0f9": {
+      "name": "Bentley Continental GT3 - Presentation",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-bentley-continental-gt3-presentation?variant=60504419074129",
+      "price": "\u20b9 2,099"
+    },
+    "99be4cc2bc5e": {
+      "name": "Mercedes-Benz SLS AMG GT3 - Macau GT Cup 2013",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-gt3-macau-gt-cup-2013?variant=60504397217873",
+      "price": "\u20b9 2,099"
+    },
+    "fa1b50a64092": {
+      "name": "LB-KAIDO WORKS Nissan R32 Skyline Black",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-black-liberty-walk?variant=60504227610705",
+      "price": "\u20b9 2,249"
+    },
+    "1bae0a5fb050": {
+      "name": "Toyota GR Yaris Rally2 - British Rally Championship - 2024 Champion",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally2-british-rally-championship-2024-champion?variant=60504048402513",
+      "price": "\u20b9 2,549"
+    },
     "714bcb9c954a": {
       "name": "Lightning McQueen with Piston Cup (Lightning McQueen Day 2026 Special Edition)",
       "url": "https://diecastsilkroad.com/products/tomica-disney-cars-lightning-mcqueen-piston-cup-mcqueen-day-2026?variant=60487125336145",
@@ -2704,21 +2744,6 @@
       "name": "RED BULL RACING HONDA  RB16B - MAX VERSTAPPEN - 2ND - TURKISH GP 2021",
       "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb16b-max-verstappen-2nd-turkish-gp-2021?variant=60483321036881",
       "price": "\u20b9 3,149"
-    },
-    "f42ac086d9e7": {
-      "name": "RED BULL RACING TAG HEUER RB12 - VERSTAPPEN - 2016 Spanish GP Winner",
-      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-max-verstappen-spanish-gp-2016-winner?variant=60483284861009",
-      "price": "\u20b9 3,149"
-    },
-    "58021fb33d9d": {
-      "name": "RED BULL RACING TAG HEUER RB12 - DANIEL RICCIARDO - SPANISH GP 2016",
-      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-daniel-ricciardo-spanish-gp-2016?variant=60483216179281",
-      "price": "\u20b9 3,149"
-    },
-    "7d83bff3daa4": {
-      "name": "RWB 997 GT3 - White alloy",
-      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-gt3-white-alloy-porsche-911-widebody?variant=60482837119057",
-      "price": "\u20b9 2,399"
     }
   },
   "_baseline_done": true,
