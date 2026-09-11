@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "be40aafd54d7": {
+      "name": "Porsche 911 GT3R 2026 GT World Challenge Asia Mandalika #911 Test Car",
+      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-mandalika-911-test-car-gt-world-challenge-asia-2026?variant=60521895428177",
+      "price": "\u20b9 2,499"
+    },
     "a98c99c0f6cb": {
       "name": "Datsun Bluebird SSS (510) - Formosa",
       "url": "https://diecastsilkroad.com/products/tarmac-works-datsun-bluebird-sss-510-formosa?variant=60504866652241",
@@ -2734,16 +2739,6 @@
       "name": "Lightning McQueen with Piston Cup (Lightning McQueen Day 2026 Special Edition)",
       "url": "https://diecastsilkroad.com/products/tomica-disney-cars-lightning-mcqueen-piston-cup-mcqueen-day-2026?variant=60487125336145",
       "price": "\u20b9 1,549"
-    },
-    "80b421b37fea": {
-      "name": "WILLIAMS RENAULT FW16 - AYRTON SENNA - TEST PAUL RICARD 02.03.1994",
-      "url": "https://diecastsilkroad.com/products/minichamps-williams-renault-fw16-ayrton-senna-paul-ricard-test-1994?variant=60483336044625",
-      "price": "\u20b9 2,899"
-    },
-    "dfb406eaf7c5": {
-      "name": "RED BULL RACING HONDA  RB16B - MAX VERSTAPPEN - 2ND - TURKISH GP 2021",
-      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb16b-max-verstappen-2nd-turkish-gp-2021?variant=60483321036881",
-      "price": "\u20b9 3,149"
     }
   },
   "_baseline_done": true,
