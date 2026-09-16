@@ -2689,7 +2689,863 @@
       "category": "Pop Race"
     }
   },
-  "diecastsilkroad": {},
+  "diecastsilkroad": {
+    "e579039dbd20": {
+      "name": "RWB 930 GUN METAL",
+      "url": "https://diecastsilkroad.com/products/pop-race-rwb-930-gun-metal-porsche-911-widebody?variant=60584620130385",
+      "price": "\u20b9 1,699"
+    },
+    "6f354da46dd2": {
+      "name": "PANDEM E30 BLUE",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-bmw-e30-blue?variant=60584615641169",
+      "price": "\u20b9 1,699"
+    },
+    "3a019fc21858": {
+      "name": "PANDEM GR SUPRA FDJ2 VALENTINA PIAZ",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-toyota-gr-supra-valentina-piaz-fdj2-45?variant=60584614428753",
+      "price": "\u20b9 1,549"
+    },
+    "88b65238e9d6": {
+      "name": "BMW Z3 Hellrot",
+      "url": "https://diecastsilkroad.com/products/minigt-bmw-z3-hellrot?variant=60583882981457",
+      "price": "\u20b9 1,349"
+    },
+    "80f73b7f41d7": {
+      "name": "Hyundai Ioniq 5N RS-01T Stealth",
+      "url": "https://diecastsilkroad.com/products/minigt-hyundai-ioniq-5-n-rs-01t-stealth?variant=60583881801809",
+      "price": "\u20b9 1,349"
+    },
+    "54f16421edcd": {
+      "name": "Lamborghini Urus Performante Viola Pasifae",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-urus-performante-viola-pasifae?variant=60583797719121",
+      "price": "\u20b9 1,249"
+    },
+    "831175dddc5d": {
+      "name": "Land Rover Defender 110  1998 Camel Trophy Tierra del Fuego CT.24 Italy",
+      "url": "https://diecastsilkroad.com/products/minigt-land-rover-defender-110-camel-trophy-1998-tierra-del-fuego-ct-24-italy?variant=60583771897937",
+      "price": "\u20b9 1,599"
+    },
+    "db30d8ccaf1e": {
+      "name": "Cadillac Eldorado Biarritz 1959 Black",
+      "url": "https://diecastsilkroad.com/products/minigt-cadillac-eldorado-biarritz-1959-black-blister?variant=60583753941073",
+      "price": "\u20b9 1,399"
+    },
+    "124dd0cf7b3d": {
+      "name": "Cadillac Eldorado Biarritz 1959 Black",
+      "url": "https://diecastsilkroad.com/products/minigt-cadillac-eldorado-biarritz-1959-black-box?variant=60583741128785",
+      "price": "\u20b9 1,249"
+    },
+    "c0a2a2b77667": {
+      "name": "Lamborghini Hurac\u00e1n LB\u2605WORKS Lime Metallic",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-lb-works-lime-metallic-blister?variant=60583738343505",
+      "price": "\u20b9 1,499"
+    },
+    "c897a6e382ed": {
+      "name": "Lamborghini Hurac\u00e1n LB\u2605WORKS Lime Metallic",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-lb-works-lime-metallic-box?variant=60583732346961",
+      "price": "\u20b9 1,349"
+    },
+    "5f4b2e5dcb54": {
+      "name": "Genesis GMR-001 - Concept 2025",
+      "url": "https://diecastsilkroad.com/products/spark-genesis-gmr-001-hypercar-concept-2025?variant=60582546473041",
+      "price": "\u20b9 2,249"
+    },
+    "bc2e90104464": {
+      "name": "Genesis GMR-001 - Test",
+      "url": "https://diecastsilkroad.com/products/spark-genesis-gmr-001-hypercar-test-car?variant=60582541787217",
+      "price": "\u20b9 2,249"
+    },
+    "be40aafd54d7": {
+      "name": "Porsche 911 GT3R 2026 GT World Challenge Asia Mandalika #911 Test Car",
+      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-mandalika-911-test-car-gt-world-challenge-asia-2026?variant=60521895428177",
+      "price": "\u20b9 2,499"
+    },
+    "a98c99c0f6cb": {
+      "name": "Datsun Bluebird SSS (510) - Formosa",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-datsun-bluebird-sss-510-formosa?variant=60504866652241",
+      "price": "\u20b9 2,199"
+    },
+    "d4f9c06f4953": {
+      "name": "Hyundai i20 N Rally1 Hybrid - Rally Sweden 2023",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-hyundai-i20-n-rally1-hybrid-rally-sweden-2023?variant=60504759140433",
+      "price": "\u20b9 2,099"
+    },
+    "9e8e7a58900f": {
+      "name": "Porsche 911 GT3 R Suzuka 1000km - Intercontinental GT Challenge 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-suzuka-1000km-igtc-2025?variant=60504637603921",
+      "price": "\u20b9 2,099"
+    },
+    "77537bc5187e": {
+      "name": "Mercedes-AMG GT3 - Bathurst 12h 2024",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt3-bathurst-12h-2024?variant=60504446009425",
+      "price": "\u20b9 2,099"
+    },
+    "fe857905b0f9": {
+      "name": "Bentley Continental GT3 - Presentation",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-bentley-continental-gt3-presentation?variant=60504419074129",
+      "price": "\u20b9 2,099"
+    },
+    "99be4cc2bc5e": {
+      "name": "Mercedes-Benz SLS AMG GT3 - Macau GT Cup 2013",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-gt3-macau-gt-cup-2013?variant=60504397217873",
+      "price": "\u20b9 2,099"
+    },
+    "fa1b50a64092": {
+      "name": "LB-KAIDO WORKS Nissan R32 Skyline Black",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-black-liberty-walk?variant=60504227610705",
+      "price": "\u20b9 2,249"
+    },
+    "1bae0a5fb050": {
+      "name": "Toyota GR Yaris Rally2 - British Rally Championship - 2024 Champion",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally2-british-rally-championship-2024-champion?variant=60504048402513",
+      "price": "\u20b9 2,549"
+    },
+    "714bcb9c954a": {
+      "name": "Lightning McQueen with Piston Cup (Lightning McQueen Day 2026 Special Edition)",
+      "url": "https://diecastsilkroad.com/products/tomica-disney-cars-lightning-mcqueen-piston-cup-mcqueen-day-2026?variant=60487125336145",
+      "price": "\u20b9 1,549"
+    },
+    "80b421b37fea": {
+      "name": "WILLIAMS RENAULT FW16 - AYRTON SENNA - TEST PAUL RICARD 02.03.1994",
+      "url": "https://diecastsilkroad.com/products/minichamps-williams-renault-fw16-ayrton-senna-paul-ricard-test-1994?variant=60483336044625",
+      "price": "\u20b9 2,899"
+    },
+    "dfb406eaf7c5": {
+      "name": "RED BULL RACING HONDA  RB16B - MAX VERSTAPPEN - 2ND - TURKISH GP 2021",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb16b-max-verstappen-2nd-turkish-gp-2021?variant=60483321036881",
+      "price": "\u20b9 3,149"
+    },
+    "f42ac086d9e7": {
+      "name": "RED BULL RACING TAG HEUER RB12 - VERSTAPPEN - 2016 Spanish GP Winner",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-max-verstappen-spanish-gp-2016-winner?variant=60483284861009",
+      "price": "\u20b9 3,149"
+    },
+    "58021fb33d9d": {
+      "name": "RED BULL RACING TAG HEUER RB12 - DANIEL RICCIARDO - SPANISH GP 2016",
+      "url": "https://diecastsilkroad.com/products/minichamps-red-bull-rb12-daniel-ricciardo-spanish-gp-2016?variant=60483216179281",
+      "price": "\u20b9 3,149"
+    },
+    "7d83bff3daa4": {
+      "name": "RWB 997 GT3 - White alloy",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-gt3-white-alloy-porsche-911-widebody?variant=60482837119057",
+      "price": "\u20b9 2,399"
+    },
+    "5f91d275666e": {
+      "name": "RWB 997 - Black Alloy",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-black-alloy-porsche-911-widebody?variant=60482748710993",
+      "price": "\u20b9 2,399"
+    },
+    "693ed9b9b8ca": {
+      "name": "Nissan Skyline GT-R Mine\u2018s (R34) - White",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-white?variant=60482727739473",
+      "price": "\u20b9 2,399"
+    },
+    "a544aec77c53": {
+      "name": "Nissan Skyline GT-R Mine\u2018s (R34) - Blue Metallic",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-blue-metallic?variant=60482683076689",
+      "price": "\u20b9 2,399"
+    },
+    "c8acd2500707": {
+      "name": "Chevrolet Camaro Kaido Racing Team V1",
+      "url": "https://diecastsilkroad.com/products/chevrolet-camaro-kaido-racing-team-v1?variant=60420221141073",
+      "price": "\u20b9 2,099"
+    },
+    "bb9a1860db54": {
+      "name": "Nissan Fairlady Z Kaido GT GULF V1",
+      "url": "https://diecastsilkroad.com/products/nissan-fairlady-z-kaido-gt-gulf-v1?variant=60419991994449",
+      "price": "\u20b9 1,999"
+    },
+    "9c8b61e21dfc": {
+      "name": "Nissan Skyline GT-R (R34) TAMIYA x KAIDO HOUSE \"The Hornet\" [Read Product Description]",
+      "url": "https://diecastsilkroad.com/products/case-nissan-skyline-gt-r-r34-tamiya-x-kaido-house-the-hornet?variant=60419589734481",
+      "price": "\u20b9 45,600"
+    },
+    "49f0ebf67f94": {
+      "name": "Nissan Skyline GT-R (R34) TAMIYA x KAIDO HOUSE \"The Hornet\"",
+      "url": "https://diecastsilkroad.com/products/nissan-skyline-gt-r-r34-tamiya-x-kaido-house-the-hornet?variant=60419245899857",
+      "price": "\u20b9 1,999"
+    },
+    "ade781759b39": {
+      "name": "Nissan Skyline GT-R (R33) Kaido Stock Car V1",
+      "url": "https://diecastsilkroad.com/products/nissan-skyline-gt-r-r33-kaido-stock-car-v1?variant=60419002597457",
+      "price": "\u20b9 1,999"
+    },
+    "8911226e5783": {
+      "name": "McLaren MP 4/4 #12 (Ayrton Senna)",
+      "url": "https://diecastsilkroad.com/products/tomica-premium-mclaren-mp4-4-12-ayrton-senna?variant=60249838321745",
+      "price": "\u20b9 1,249"
+    },
+    "cf69d7cf6ba8": {
+      "name": "HONDA CIVIC (EF9) #15 JTC 1991 InterTEC",
+      "url": "https://diecastsilkroad.com/products/pop-race-honda-civic-ef9-15-jtc-1991-intertec?variant=60235352965201",
+      "price": "\u20b9 1,699"
+    },
+    "e7f2493b3ad3": {
+      "name": "PANDEM E30 ENEOS",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-bmw-e30-eneos?variant=60235296374865",
+      "price": "\u20b9 1,699"
+    },
+    "b1a3894e9b63": {
+      "name": "LB SUPER SILHOUETTE RX7 (FD3S)",
+      "url": "https://diecastsilkroad.com/products/pop-race-lb-super-silhouette-mazda-rx-7-fd3s?variant=60235278123089",
+      "price": "\u20b9 1,799"
+    },
+    "ae114b4e579e": {
+      "name": "LB-WORKS TOYOTA SUPRA (A90) - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-red?variant=60205495386193",
+      "price": "\u20b9 2,549"
+    },
+    "69274e623fd0": {
+      "name": "LB-WORKS TOYOTA SUPRA (A90) - Black",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-black?variant=60205468483665",
+      "price": "\u20b9 2,549"
+    },
+    "86185152bf5e": {
+      "name": "Mercedes-AMG GT3 24h of SPA - 2022 Winner",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt3-spa-24h-2022-winner?variant=60205461012561",
+      "price": "\u20b9 2,099"
+    },
+    "278f03f30416": {
+      "name": "Porsche 911 GT3 R 24h of Le Mans 2025 - Winner of LMGT3",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-le-mans-24h-2025-lmgt3-winner?variant=60205460619345",
+      "price": "\u20b9 2,099"
+    },
+    "af9a2bb6e283": {
+      "name": "Toyota GR YARIS Rally1 HYBRID - Safari Rally Kenya 2024 Winner",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally1-hybrid-safari-rally-kenya-2024-winner?variant=60205460324433",
+      "price": "\u20b9 2,099"
+    },
+    "3b797df7fd1a": {
+      "name": "Porsche 911 GT3 Cup (992) - Porsche Carrera Cup Australia 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-cup-992-carrera-cup-australia-2025?variant=60205459472465",
+      "price": "\u20b9 2,349"
+    },
+    "6aed95408cdd": {
+      "name": "Pandem Mazda RX-7 FC3S Watanabe",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-pandem-mazda-rx-7-fc3s-watanabe?variant=60205456785489",
+      "price": "\u20b9 2,099"
+    },
+    "aba7b3ca2d07": {
+      "name": "LB-KAIDO WORKS Nissan R32 Skyline Tarmac - Model Car + Trading Cards Combo Set",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-kaido-works-nissan-r32-skyline-trading-cards-combo-set?variant=60205456556113",
+      "price": "\u20b9 2,949"
+    },
+    "07e4edcaa7fe": {
+      "name": "Lamborghini Huracan GT3 EVO2 - GTWCA Indonesia 2026 #29",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-gtwca-indonesia-2026-29?variant=60112721018961",
+      "price": "\u20b9 1,749"
+    },
+    "5e85de5aec9e": {
+      "name": "Lamborghini Huracan GT3 EVO2 - DTM 2023 #19",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-dtm-2023-19?variant=60112648175697",
+      "price": "\u20b9 1,749"
+    },
+    "c9a92e894d44": {
+      "name": "Bugatti Tourbillon - Dore",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-bugatti-tourbillon-dore?variant=60112575725649",
+      "price": "\u20b9 1,349"
+    },
+    "9753c8bc3c32": {
+      "name": "Bugatti Tourbillon - Blue Atlantic",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-bugatti-tourbillon-blue-atlantic?variant=60112550428753",
+      "price": "\u20b9 1,349"
+    },
+    "e4d830b0d573": {
+      "name": "Bushi Rex [AO Exclusive]",
+      "url": "https://diecastsilkroad.com/products/spark-ao-racing-bushi-rex-porsche-911-gt3-r-8-suzuka-1000km-2026?variant=60101958008913",
+      "price": "\u20b9 3,499"
+    },
+    "ec3d6056e795": {
+      "name": "Volkswagen Type II (T1) Panel Van - Lilo & Stitch",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-volkswagen-t1-panel-van-lilo-and-stitch?variant=60080582295633",
+      "price": "\u20b9 2,049"
+    },
+    "968711e7af23": {
+      "name": "Alpine A424 #35 ALPINE ENDURANCE TEAM - 6th Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/alpine-a424-35-alpine-endurance-team-6th-le-mans-24h-2026?variant=59944536440913",
+      "price": "\u20b9 2,149"
+    },
+    "ee11b6586048": {
+      "name": "Alpine A424 #36 ALPINE ENDURANCE TEAM 10th Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/alpine-a424-36-alpine-endurance-team-10th-le-mans-24h-2026?variant=59944537653329",
+      "price": "\u20b9 2,149"
+    },
+    "e210ad81345b": {
+      "name": "Porsche 911 GT3 (992) - Yellow/Black",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-992-yellow-black?variant=60041406021713",
+      "price": "\u20b9 2,649"
+    },
+    "b467e126c527": {
+      "name": "Nissan Skyline 2000GT-R (KPGC110) - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-2000gt-r-kpgc110-kenmeri-red-blister?variant=60041405726801",
+      "price": "\u20b9 1,249"
+    },
+    "62f9da22c7f9": {
+      "name": "Nissan Skyline 2000GT-R (KPGC110) - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-2000gt-r-kpgc110-kenmeri-red-box?variant=60041405333585",
+      "price": "\u20b9 1,149"
+    },
+    "ba0b1f8660f3": {
+      "name": "Mitsubishi Lancer Evolution - Hong Kong Beijing Rally 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-hong-kong-beijing-rally-2025-blister?variant=60041404153937",
+      "price": "\u20b9 1,549"
+    },
+    "3169747dac4b": {
+      "name": "Mitsubishi Lancer Evolution - Hong Kong Beijing Rally 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-hong-kong-beijing-rally-2025-box?variant=60041401729105",
+      "price": "\u20b9 1,449"
+    },
+    "f1a466dbabcd": {
+      "name": "Mercedes-Benz SLS AMG Coup\u00e9 Black Series - Matte Blue",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-black-series-matte-blue-blister?variant=60041401401425",
+      "price": "\u20b9 1,249"
+    },
+    "a05994ff44eb": {
+      "name": "Mercedes-Benz SLS AMG Coup\u00e9 Black Series - Matte Blue",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-black-series-matte-blue-box?variant=60041398550609",
+      "price": "\u20b9 1,149"
+    },
+    "0be273752b8d": {
+      "name": "Mercedes-Benz AMG GT - Black Series Safety Car 2026",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-2026-blister?variant=60041381838929",
+      "price": "\u20b9 1,549"
+    },
+    "fc07ab4e1c1c": {
+      "name": "Mercedes-Benz AMG GT - Black Series Safety Car 2026",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-2026-box?variant=60041347432529",
+      "price": "\u20b9 1,449"
+    },
+    "ffb2e23e8c55": {
+      "name": "Kimera EVO38 - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-kimera-evo38-red-blister?variant=60041347072081",
+      "price": "\u20b9 1,349"
+    },
+    "f3500347dd03": {
+      "name": "Kimera EVO38 - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-kimera-evo38-red-box?variant=60041318170705",
+      "price": "\u20b9 1,249"
+    },
+    "b1e1bc87bc6f": {
+      "name": "FORD GT GTE PRO - LE MANS 24H 2019",
+      "url": "https://diecastsilkroad.com/products/pop-race-ford-gt-gte-pro-le-mans-24h-2019?variant=60014765080657",
+      "price": "\u20b9 1,799"
+    },
+    "8b6d30ad0d13": {
+      "name": "PANDEM LOTUS ELISE - GREEN",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-lotus-elise-green?variant=60014739783761",
+      "price": "\u20b9 1,699"
+    },
+    "b5c300e6047b": {
+      "name": "EVA RT TEST TYPE-01 AMG GT3 EVO - MACAU GP 2023",
+      "url": "https://diecastsilkroad.com/products/pop-race-eva-rt-test-type-01-amg-gt3-evo-macau-gp-2023?variant=60014731624529",
+      "price": "\u20b9 1,799"
+    },
+    "063f657835f0": {
+      "name": "Pagani Zonda Revoluci\u00f3n",
+      "url": "https://diecastsilkroad.com/products/lcd-models-pagani-zonda-revolucion-carbon-black?variant=59983971221585",
+      "price": "\u20b9 2,799"
+    },
+    "89c729c95d09": {
+      "name": "RWB 993 - Matte Black",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-993-matte-black-porsche-911-widebody?variant=59971792568401",
+      "price": "\u20b9 2,399"
+    },
+    "4eff50444b3c": {
+      "name": "LB-WORKS 35 Final Edition",
+      "url": "https://diecastsilkroad.com/products/pop-race-lb-works-35-final-edition-liberty-walk-r35-gtr?variant=59956657782865",
+      "price": "\u20b9 1,799"
+    },
+    "aa4a9d632e19": {
+      "name": "Aston Martin Valkyrie #007 ASTON MARTIN THOR TEAM - 8th Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/toyota-tr010-hybrid-8-toyota-racing-3rd-le-mans-24h-2026-copy?variant=59944508129361",
+      "price": "\u20b9 2,149"
+    },
+    "1d422d34c24c": {
+      "name": "Aston Martin Valkyrie #009 ASTON MARTIN THOR TEAM - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-valkyrie-007-aston-martin-thor-team-8th-le-mans-24h-2026-copy?variant=59944508424273",
+      "price": "\u20b9 2,149"
+    },
+    "7ce4f22702be": {
+      "name": "Aston Martin Vantage AMR GT3 EVO #34 - Natural Elements by Walkenhorst Motorsport - 2nd Place - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-aston-martin-vantage-amr-gt3-evo-34-walkenhorst-2nd-24h-nurburgring-2026?variant=59893770190929",
+      "price": "\u20b9 2,149"
+    },
+    "a47e0e118f25": {
+      "name": "Aston Martin Vantage AMR GT3 EVO #7 Comtoyou Racing -24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-amr-gt3-evo-7-comtoyou-racing?variant=59944777744465",
+      "price": "\u20b9 2,149"
+    },
+    "542fcfa0b8fc": {
+      "name": "Pandem QR32",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-qr32-widebody-r32-gtr?variant=59956657061969",
+      "price": "\u20b9 1,549"
+    },
+    "dea0fdf3b808": {
+      "name": "BMW M4 GT3 EVO #32 Team WRT -  24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/bmw-m4-gt3-evo-32-team-wrt-24h-spa-2026?variant=59944780398673",
+      "price": "\u20b9 2,149"
+    },
+    "263b13fe010b": {
+      "name": "BMW M4 GT3 EVO #30 Team WRT - 24H SPA 2026",
+      "url": "https://diecastsilkroad.com/products/bmw-m4-gt3-evo-30-team-wrt-24h-spa-2026?variant=59944780169297",
+      "price": "\u20b9 2,149"
+    },
+    "dc88fbcb5617": {
+      "name": "Aston Martin Vantage AMR GT3 EVO #700 Comtoyou Racing -24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-amr-gt3-evo-700-comtoyou-racing",
+      "price": "\u20b9 2,149"
+    },
+    "689110ac8a26": {
+      "name": "BMW M4 GT3 EVO #98 Rowe Racing - 9th 24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/bmw-m4-gt3-evo-98-rowe-racing-9th-24h-spa-2026?variant=59944777416785",
+      "price": "\u20b9 2,149"
+    },
+    "e480410e429e": {
+      "name": "Porsche 911 GT3 R (992) EVO #2 Boutsen VDS -8th 24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-992-evo-2-boutsen-vds-8th-24h-spa-2026?variant=59944776958033",
+      "price": "\u20b9 2,149"
+    },
+    "32a86ad31397": {
+      "name": "Mercedes-AMG GT3 EVO #48 Mercedes-AMG Team MANN-FILTER -  2nd 24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/mercedes-amg-gt3-evo-48-mercedes-amg-team-mann-filter-2nd-24h-spa-2026?variant=59944772960337",
+      "price": "\u20b9 2,149"
+    },
+    "fd9bbac4df16": {
+      "name": "Porsche 911 GT3 R (992) EVO #80 Lionspeed GP -  Winner 24H Spa 2026",
+      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-992-evo-80-lionspeed-gp-winner-24h-spa-2026?variant=59944772173905",
+      "price": "\u20b9 2,149"
+    },
+    "83d3ecbe859f": {
+      "name": "Oreca 07 - Gibson #29 FORESTIER RACING BY PANIS 3rd LMP2 class - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-29-forestier-racing-by-panis-3rd-lmp2-class-le-mans-24h-2026?variant=59944701329489",
+      "price": "\u20b9 2,149"
+    },
+    "f2dc6a5ff11b": {
+      "name": "Aston Martin Vantage AMR LMGT3 #59 RACING SPIRIT OF LEMAN - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-amr-lmgt3-59-racing-spirit-of-leman-le-mans-24h-2026",
+      "price": "\u20b9 2,149"
+    },
+    "0d42ec2ba046": {
+      "name": "BMW M4 LMGT3 Evo #69 TEAM WRT - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/bmw-m4-lmgt3-evo-69-team-wrt-le-mans-24h-2026?variant=59944619966545",
+      "price": "\u20b9 2,149"
+    },
+    "066d5b2a1f19": {
+      "name": "BMW M4 LMGT3 Evo #32 TEAM WRT - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/bmw-m4-lmgt3-evo-32-team-wrt-le-mans-24h-2026?variant=59944611872849",
+      "price": "\u20b9 2,149"
+    },
+    "d11bfebce17f": {
+      "name": "Oreca 07 - Gibson #183 AF CORSE -  Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-183-af-corse-le-mans-24h-2026?variant=59944605646929",
+      "price": "\u20b9 2,149"
+    },
+    "9389559bcb79": {
+      "name": "Oreca 07 - Gibson #48 RD LIMITED - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-48-rd-limited-le-mans-24h-2026?variant=59944599814225",
+      "price": "\u20b9 2,149"
+    },
+    "39b52463ff4a": {
+      "name": "Oreca 07 - Gibson #44 PROTON COMPETITION - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-44-proton-competition-le-mans-24h-2026?variant=59944597520465",
+      "price": "\u20b9 2,149"
+    },
+    "ff7d92f123dd": {
+      "name": "Mercedes-AMG LMGT3 #79 IRON LYNX - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/mercedes-amg-lmgt3-79-iron-lynx-le-mans-24h-2026?variant=59944584806481",
+      "price": "\u20b9 2,149"
+    },
+    "2df7c5348a54": {
+      "name": "Mercedes-AMG LMGT3 #62 TEAM QATAR BY IRON LYNX - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/mercedes-amg-lmgt3-62-team-qatar-by-iron-lynx-le-mans-24h-2026?variant=59944579465297",
+      "price": "\u20b9 2,149"
+    },
+    "a4981b2b3ea5": {
+      "name": "Mercedes-AMG LMGT3 #61 Iron Lynx - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/mercedes-amg-lmgt3-61-iron-lynx-le-mans-24h-2026?variant=59944578777169",
+      "price": "\u20b9 2,149"
+    },
+    "9adec142706b": {
+      "name": "Aston Martin Vantage AMR LMGT3 #27 HEART OF RACING TEAM - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-amr-lmgt3-27-heart-of-racing-team-le-mans-24h-2026",
+      "price": "\u20b9 2,149"
+    },
+    "b644e28a91b9": {
+      "name": "Aston Martin Vantage AMR LMGT3 #23 HEART OF RACING TEAM - 3rd LMGT3 class Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-amr-lmgt3-23-heart-of-racing-team-3rd-lmgt3-class-le-mans-24h-2026",
+      "price": "\u20b9 2,149"
+    },
+    "2c64106cf24c": {
+      "name": "Oreca 07 - Gibson #343 INTER EUROPOL COMPETITION - 2nd LMP2 class Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-343-inter-europol-competition-2nd-lmp2-class-le-mans-24h-2026?variant=59944566915153",
+      "price": "\u20b9 2,149"
+    },
+    "a75537e9693e": {
+      "name": "Oreca 07 - Gibson #43 INTER EUROPOL COMPETITION - Winner LMP2 class Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-43-inter-europol-competition-winner-lmp2-class-le-mans-24h-2026?variant=59944566227025",
+      "price": "\u20b9 2,149"
+    },
+    "8b3f4ebcc360": {
+      "name": "Oreca 07 - Gibson #30 DUQUEINE TEAM - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/oreca-07-gibson-30-duqueine-team-le-mans-24h-2026?variant=59944541356113",
+      "price": "\u20b9 2,149"
+    },
+    "4c1b4db0c5c4": {
+      "name": "Genesis GMR-001-Hypercar #19 GENESIS MAGMA RACING - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/genesis-gmr-001-hypercar-19-genesis-magma-racing-le-mans-24h-2026?variant=59944532967505",
+      "price": "\u20b9 2,149"
+    },
+    "774c5ff035b3": {
+      "name": "Genesis GMR-001-Hypercar #17 GENESIS MAGMA RACING - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/genesis-gmr-001-hypercar-17-genesis-magma-racing-le-mans-24h-2026?variant=59944526020689",
+      "price": "\u20b9 2,149"
+    },
+    "1102f341e2d6": {
+      "name": "Oreca 07 - Gibson #14 TDS RACING - Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/aston-martin-valkyrie-009-aston-martin-thor-team-le-mans-24h-2026-copy?variant=59944510423121",
+      "price": "\u20b9 2,149"
+    },
+    "9322269ff0c5": {
+      "name": "TOYOTA TR010 HYBRID #8 TOYOTA RACING - 3rd Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/toyota-tr010-hybrid-7-toyota-racing-winner-le-mans-24h-2026-copy?variant=59944503476305",
+      "price": "\u20b9 2,149"
+    },
+    "2cd266b924d2": {
+      "name": "TOYOTA TR010 HYBRID #7 TOYOTA RACING - Winner Le Mans 24H 2026",
+      "url": "https://diecastsilkroad.com/products/toyota-tr010-hybrid-7-toyota-racing-winner-le-mans-24h-2026?variant=59944463106129",
+      "price": "\u20b9 2,149"
+    },
+    "5bffba704b3e": {
+      "name": "Porsche 917/20 #20 Le Mans Test 1970",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-917-20-20-white-le-mans-test-1971?variant=59932554657873",
+      "price": "\u20b9 2,149"
+    },
+    "4b84cb9d8daa": {
+      "name": "Porsche 917/20 \"Pink Pig\" #23 - Le Mans 24H 1971",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-917-20-pink-pig-23-le-mans-24h-1971?variant=59932334129233",
+      "price": "\u20b9 2,149"
+    },
+    "6175da09fb5d": {
+      "name": "BMW M4 GT3 EVO #1 - ROWE RACING 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-evo-1-rowe-racing-24h-nurburgring-2026?variant=59893896511569",
+      "price": "\u20b9 2,149"
+    },
+    "bab2a53bfca6": {
+      "name": "Porsche 911 GT3 R (992) Evo26 #911 - Manthey - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-911-gt3-r-992-evo26-911-manthey-24h-nurburgring-2026?variant=59893889794129",
+      "price": "\u20b9 2,149"
+    },
+    "804c2dc874d0": {
+      "name": "HWA EVO.R #63 - HWA Engineering Speed - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-hwa-evo-r-63-hwa-engineering-speed-24h-nurburgring-2026?variant=59893880356945",
+      "price": "\u20b9 2,149"
+    },
+    "e5c3de8cbb1d": {
+      "name": "Porsche 911 GT3 R (992) Evo26 #17 - Dunlop Motorsport - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-porsche-911-gt3-r-992-evo26-17-dunlop-motorsport-24h-nurburgring-2026?variant=59893836283985",
+      "price": "\u20b9 2,149"
+    },
+    "40f63210bdf7": {
+      "name": "BMW M4 GT3 EVO #77 - Schubert Motorsport - 8th Place - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-evo-77-schubert-motorsport-8th-24h-nurburgring-2026?variant=59893827371089",
+      "price": "\u20b9 2,149"
+    },
+    "fd6103ee3426": {
+      "name": "BMW M3 Touring 24h #81 - BMW M Motorsport - 4th Place - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m3-touring-24h-81-bmw-m-motorsport-4th-24h-nurburgring-2026?variant=59893782675537",
+      "price": "\u20b9 2,149"
+    },
+    "c63563f1eade": {
+      "name": "BMW M4 GT3 EVO #99 - ROWE RACING - 3rd Place - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-evo-99-rowe-racing-3rd-24h-nurburgring-2026?variant=59893776908369",
+      "price": "\u20b9 2,149"
+    },
+    "b34695ca7d23": {
+      "name": "Aston Martin Vantage GT3 Evo #44 Magnus Racing 2025 - IMSA Daytona 24 Hrs",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-gt3-evo-44-magnus-racing-2025-imsa-daytona-24-hrs?variant=59751830585425",
+      "price": "\u20b9 1,599"
+    },
+    "0d5d4cee4e30": {
+      "name": "Aston Martin Vantage GT3 Evo #44 Magnus Racing 2025 - IMSA Daytona 24 Hrs",
+      "url": "https://diecastsilkroad.com/products/aston-martin-vantage-gt3-evo-44-magnus-racing-2025-imsa-daytona-24-hrs-bl?variant=59756400115793",
+      "price": "\u20b9 1,749"
+    },
+    "6ccc5e640583": {
+      "name": "Mercedes-AMG GT3 #80 - Team RAVENOL - Winner - 24H N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mercedes-amg-gt3-80-team-ravenol-winner-24h-nurburgring-2026?variant=59893751480401",
+      "price": "\u20b9 2,149"
+    },
+    "767ca1962ef7": {
+      "name": "Mercedes-AMG GT3 - Bathurst 12h 2026 Winner",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt3-bathurst-12h-2026-winner?variant=59890983764049",
+      "price": "\u20b9 2,099"
+    },
+    "8317bc895999": {
+      "name": "Porsche 911 GT3 R - N\u00fcrburgring 24h 2024",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-nurburgring-24h-2024?variant=59890919112785",
+      "price": "\u20b9 2,099"
+    },
+    "decb3032a899": {
+      "name": "LB-ER34 Super Silhouette SKYLINE - MGMINI",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-er34-super-silhouette-skyline-mgmini?variant=59890814910545",
+      "price": "\u20b9 2,249"
+    },
+    "075359e0c472": {
+      "name": "Toyota GR YARIS Rally1 HYBRID - Rally Finland 2024",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally1-hybrid-rally-finland-2024?variant=59890727518289",
+      "price": "\u20b9 2,449"
+    },
+    "00f12fdc3ebf": {
+      "name": "LB-WORKS TOYOTA SUPRA (A90) - White",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-toyota-supra-a90-white?variant=59890676793425",
+      "price": "\u20b9 2,449"
+    },
+    "b893c53fe25d": {
+      "name": "MAZDA RX7 RE-AMEMIYA - Dark Chrome",
+      "url": "https://diecastsilkroad.com/products/pop-race-mazda-rx7-re-amemiya-dark-chrome?variant=59874998845521",
+      "price": "\u20b9 1,699"
+    },
+    "6b54135a277f": {
+      "name": "Honda NSX - Dark Chrome",
+      "url": "https://diecastsilkroad.com/products/pop-race-honda-nsx-dark-chrome?variant=59874981642321",
+      "price": "\u20b9 1,699"
+    },
+    "fe9fc8ff288e": {
+      "name": "Singer Targa - Silver Chrome",
+      "url": "https://diecastsilkroad.com/products/pop-race-singer-targa-silver-chrome?variant=59874957197393",
+      "price": "\u20b9 1,549"
+    },
+    "0d0edfee33fa": {
+      "name": "Mercedes-Benz AMG CLK-GTR GT - Championship 1997",
+      "url": "https://diecastsilkroad.com/products/pop-race-clk-gtr-gt-championship-1997?variant=59874925707345",
+      "price": "\u20b9 1,799"
+    },
+    "9380ebb5891a": {
+      "name": "Lamborghini Huracan GT3 EVO2 - CHINA GT(ZHUHAI) 2026 #63",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-china-gt-zhuhai-2026-no-63?variant=59860802437201",
+      "price": "\u20b9 2,249"
+    },
+    "bcf8c7f61a03": {
+      "name": "Lamborghini Huracan GT3 EVO2 - DTM 2024 #19",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-huracan-gt3-evo2-dtm-2024-no-19?variant=59860801847377",
+      "price": "\u20b9 1,749"
+    },
+    "f294604283a1": {
+      "name": "Porsche 911 GT3 R - DTM 2025 #91",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-porsche-911-gt3-r-dtm-2025-no-91?variant=59860801290321",
+      "price": "\u20b9 1,749"
+    },
+    "5efb3fac245b": {
+      "name": "Porsche 911 GT3 R - DTM 2025 #90",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-porsche-911-gt3-r-dtm-2025-no-90?variant=59860800536657",
+      "price": "\u20b9 1,749"
+    },
+    "5cb274ddd75f": {
+      "name": "Porsche 911 GT3 R - DTM 2025 #92",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-porsche-911-gt3-r-dtm-2025-no-92?variant=59860797063249",
+      "price": "\u20b9 1,749"
+    },
+    "96394cc722c9": {
+      "name": "Porsche 911 GT1 1998 - Red",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-porsche-911-gt1-1998-red?variant=59860795064401",
+      "price": "\u20b9 1,399"
+    },
+    "08de4895442d": {
+      "name": "Porsche 911 GT1 1998 - Silver",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-porsche-911-gt1-1998-silver?variant=59860796899409",
+      "price": "\u20b9 1,399"
+    },
+    "3c313e81898b": {
+      "name": "Ferrari 296 Speciale Rosso Corsa",
+      "url": "https://diecastsilkroad.com/products/bbr-ferrari-296-speciale-rosso-corsa?variant=59848804925521",
+      "price": "\u20b9 2,399"
+    },
+    "2847dc87c64c": {
+      "name": "Porsche 911 (992) GT3 Touring - Auratium Green",
+      "url": "https://diecastsilkroad.com/products/minigt-porsche-911-992-gt3-touring-auratium-green?variant=59848752824401",
+      "price": "\u20b9 1,249"
+    },
+    "016eb20f0e8b": {
+      "name": "McLaren Mastercard F1 TEAM MCL40 - Oscar Piastri - Silverstone GP 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-mclaren-mastercard-f1-team-mcl40-oscar-piastri-silverstone-gp-2026?variant=59847686815825",
+      "price": "\u20b9 2,999"
+    },
+    "a49b4e7ee7e0": {
+      "name": "Team Crew Figure Set",
+      "url": "https://diecastsilkroad.com/products/team-crew-figure-set?variant=59844811194449",
+      "price": "\u20b9 1,599"
+    },
+    "16209bc9bec0": {
+      "name": "LBWK Truck - Black",
+      "url": "https://diecastsilkroad.com/products/pop-race-lbwk-truck-black?variant=59844768104529",
+      "price": "\u20b9 7,499"
+    },
+    "a403e4237b1c": {
+      "name": "LBWK AMG GT3 EVO - Black",
+      "url": "https://diecastsilkroad.com/products/pop-race-lbwk-amg-gt3-evo-black?variant=59844626481233",
+      "price": "\u20b9 1,699"
+    },
+    "5b092b851334": {
+      "name": "Porsche 911 Dakar #718 and Volkswagen ID Buzz Porsche Centrum Gelderland Roughroads Set",
+      "url": "https://diecastsilkroad.com/products/porsche-911-dakar-718-and-volkswagen-id-buzz-porsche-centrum-gelderland-roughroads-set-1?variant=59841991442513",
+      "price": "\u20b9 3,599"
+    },
+    "8f8bc45ffc11": {
+      "name": "Lancer Evolution IV - DARK CHROME",
+      "url": "https://diecastsilkroad.com/products/pop-race-lancer-evolution-iv-dark-chrome?variant=59812777394257",
+      "price": "\u20b9 1,699"
+    },
+    "62e0f4fb97a0": {
+      "name": "Porsche GT3RS(992.1) Manthey Racing - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-gt3rs-992-1-manthey-racing-red?variant=59776945193041",
+      "price": "\u20b9 2,699"
+    },
+    "2a1681118642": {
+      "name": "Mitsubishi Lancer GSR Evolution III - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-gsr-evolution-iii-red?variant=59776924090449",
+      "price": "\u20b9 1,149"
+    },
+    "3a08b00ffe29": {
+      "name": "Mitsubishi Carisma GT Evolution IV - RAC Rally 1997",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-carisma-gt-evolution-iv-rac-rally-1997?variant=59776915210321",
+      "price": "\u20b9 1,449"
+    },
+    "8bb59b832f3f": {
+      "name": "Nissan VeilSide FFZ400 Fairlady Z - Chameleon purple",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-veilside-ffz400-fairlady-z-chameleon-purple?variant=59776908984401",
+      "price": "\u20b9 1,599"
+    },
+    "78e271c404f4": {
+      "name": "Porsche 928 S4 - Grey Metallic",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-928-s4-grey-metallic?variant=59776892534865",
+      "price": "\u20b9 1,149"
+    },
+    "ee772cfd87a2": {
+      "name": "Kimera EVO37 - Blue",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-kimera-evo37-blue?variant=59776859832401",
+      "price": "\u20b9 1,249"
+    },
+    "ee808d47dc34": {
+      "name": "Nissan Skyline 2000GT-R (KPGC110)  - Silver",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-2000gt-r-kpgc110-silver?variant=59776798916689",
+      "price": "\u20b9 1,149"
+    },
+    "c9c5fe7fddf0": {
+      "name": "BMW M3 TOURING 24H - 24H N\u00dcRBURGRING 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m3-touring-24h-nurburgring-2026?variant=59760417538129",
+      "price": "\u20b9 2,799"
+    },
+    "0325b994d9e9": {
+      "name": "BMW M3 Touring 24H NLS 2 N\u00fcrburgring 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m3-touring-24h-nls2-nurburgring-2026?variant=59760354689105",
+      "price": "\u20b9 2,799"
+    },
+    "7257b7ad4e74": {
+      "name": "BMW M3 TOURING 24H - APRIL FOOLS DAY/ INCEPTION DESIGN - 2025",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m3-touring-24h-april-fools-day-inception-design-2025?variant=59760333717585",
+      "price": "\u20b9 2,799"
+    },
+    "5edb359a0c52": {
+      "name": "HWA EVO R HWA ENGINEERING SPEED - 24H N\u00dcRBURGRING 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-hwa-evo-r-hwa-engineering-speed-24h-nurburgring-2026?variant=59760308027473",
+      "price": "\u20b9 2,799"
+    },
+    "1202cf0244b4": {
+      "name": "HWA EVO R HWA ENGINEERING SPEED - 24H N\u00dcRBURGRING 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-hwa-evo-r-hwa-engineering-speed-24h-nurburgring-2026-yellow?variant=59760283058257",
+      "price": "\u20b9 2,799"
+    },
+    "d3ed4d896bca": {
+      "name": "HWA EVO R HWA ENGINEERING SPEED - 24H N\u00dcRBURGRING 2026",
+      "url": "https://diecastsilkroad.com/products/minichamps-hwa-evo-r-hwa-engineering-speed-24h-nurburgring-2026-black?variant=59760277979217",
+      "price": "\u20b9 2,799"
+    },
+    "62fb112114a2": {
+      "name": "Porsche Carrera GT GT - Silver",
+      "url": "https://diecastsilkroad.com/products/porsche-carrera-gt-gt-silver-bl?variant=59756428132433",
+      "price": "\u20b9 1,499"
+    },
+    "03e69f24a163": {
+      "name": "Toyota Sprinter Trueno AE86 Widebody by Jon Sibal - Mickey & Friends Steamboat Willie",
+      "url": "https://diecastsilkroad.com/products/toyota-sprinter-trueno-ae86-widebody-by-jon-sibal-mickey-friends-steamboat-willie?variant=59719354318929",
+      "price": "\u20b9 2,499"
+    },
+    "919e6534e2df": {
+      "name": "Mini Cooper - Union Jack Roof & White Bonnet Stripes",
+      "url": "https://diecastsilkroad.com/products/mini-cooper-union-jack-roof-white-bonnet-stripes?variant=59710614798417",
+      "price": "\u20b9 1,199"
+    },
+    "a4e052d02154": {
+      "name": "Porsche 911 GT3 R - DTM 2026",
+      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-dtm-2026?variant=59708078751825",
+      "price": "\u20b9 2,049"
+    },
+    "68748b9d0288": {
+      "name": "Porsche 911 GT3 R - DTM Champion 2025",
+      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-dtm-champion-2025?variant=59708076130385",
+      "price": "\u20b9 2,049"
+    },
+    "582972ffef92": {
+      "name": "Mercedes-AMG GT3 - Bathurst 12h 2026 - Craft-Bamboo Racing",
+      "url": "https://diecastsilkroad.com/products/mercedes-amg-gt3-bathurst-12h-2026-craft-bamboo-racing?variant=59708064071761",
+      "price": "\u20b9 3,649"
+    },
+    "85f3e45a2c35": {
+      "name": "Lamborghini Urus Performance x Basquiat - Matte White",
+      "url": "https://diecastsilkroad.com/products/trends-hobby-lamborghini-urus-performance-x-basquiat-matte-white?variant=59655895482449",
+      "price": "\u20b9 2,099"
+    },
+    "3961d26538ca": {
+      "name": "Tarmac Works - Mitsubishi Lancer Evolution III - Hong Kong Beijing Rally 1996 Winner Ari Vatanen / Christian Gilbert",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-iii-hong-kong-beijing-rally-1996-winner-ari-vatanen-christian-gilbert?variant=59639778312273",
+      "price": "\u20b9 1,449"
+    },
+    "66735a954466": {
+      "name": "Tarmac Works - URAS Skyline ER34 - Midnight Purple",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-uras-skyline-er34-midnight-purple?variant=59639774675025",
+      "price": "\u20b9 1,399"
+    },
+    "b59457447022": {
+      "name": "Tarmac Works - Audi R8 LMS GT3 evo II Sean Wotherspoon Special Edition - HOBBY64",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-audi-r8-lms-gt3-evo-ii-sean-wotherspoon-special-edition-hobby64?variant=59630587805777",
+      "price": "\u20b9 3,899"
+    },
+    "b598a1676bbc": {
+      "name": "[Pre Order] Inno64 - MAZDA RX-7 MAD MIKE \"MADBUL Gen8\"",
+      "url": "https://diecastsilkroad.com/products/pre-order-inno64-mazda-rx-7-mad-mike-madbul-gen8?variant=59580800008273",
+      "price": "\u20b9 799"
+    },
+    "0eccf79d6e71": {
+      "name": "[Pre Order] Inno64 - PANDEM 997 \"PINK PIG\"",
+      "url": "https://diecastsilkroad.com/products/pre-order-inno64-pandem-997-pink-pig?variant=59580786835537",
+      "price": "\u20b9 799"
+    },
+    "cc4dc6e24651": {
+      "name": "[Pre Order] Inno64 - LIBERTY WALK COUNTACH",
+      "url": "https://diecastsilkroad.com/products/pre-order-inno64-liberty-walk-countach?variant=59580773990481",
+      "price": "\u20b9 2,199"
+    },
+    "02bc31e78c9e": {
+      "name": "[Pre Order] Tarmac Works - Toyota GR YARIS Rally1 HYBRID - Central European Rally 2023",
+      "url": "https://diecastsilkroad.com/products/pre-order-tarmac-works-toyota-gr-yaris-rally1-hybrid-central-european-rally-2023?variant=59576285659217",
+      "price": "\u20b9 99"
+    },
+    "30cb0f877678": {
+      "name": "[Pre Order] Tarmac Works - Porsche 911 GT3 R - N\u00fcrburgring 24h 2024",
+      "url": "https://diecastsilkroad.com/products/pre-order-tarmac-works-porsche-911-gt3-r-nurburgring-24h-2025?variant=59576262885457",
+      "price": "\u20b9 99"
+    },
+    "afff6be8f1a6": {
+      "name": "[Pre Order] Tarmac Works - Nissan GT-R NISMO GT3 GT - World Challenge Asia 2025 - TEAM 5ZIGEN",
+      "url": "https://diecastsilkroad.com/products/pre-order-tarmac-works-nissan-gt-r-nismo-gt3-gt-world-challenge-asia-2025-team-5zigen?variant=59576234016849",
+      "price": "\u20b9 99"
+    },
+    "0c058dd94f0f": {
+      "name": "[Pre Order] Tarmac Works - Audi A4 quattro - BTCC 1996 Champion - Frank Bielay",
+      "url": "https://diecastsilkroad.com/products/pre-order-tarmac-works-audi-a4-quattro-btcc-1996-champion-frank-bielay?variant=59576058642513",
+      "price": "\u20b9 99"
+    }
+  },
   "_baseline_done": true,
   "_fprint_migrated": true
 }
