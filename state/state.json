@@ -2689,58 +2689,7 @@
       "category": "Pop Race"
     }
   },
-  "diecastsilkroad": {
-    "acc6bd263637": {
-      "name": "Porsche 911 GT3 R #8 AO Racing - Winner Suzuka 1000km 2026 - With Pit Board",
-      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-8-ao-racing-winner-suzuka-1000km-2026-with-pit-board?variant=62678045491281",
-      "price": "TBA"
-    },
-    "e579039dbd20": {
-      "name": "RWB 930 GUN METAL",
-      "url": "https://diecastsilkroad.com/products/pop-race-rwb-930-gun-metal-porsche-911-widebody?variant=60584620130385",
-      "price": "\u20b9 1,699"
-    },
-    "6f354da46dd2": {
-      "name": "PANDEM E30 BLUE",
-      "url": "https://diecastsilkroad.com/products/pop-race-pandem-bmw-e30-blue?variant=60584615641169",
-      "price": "\u20b9 1,699"
-    },
-    "3a019fc21858": {
-      "name": "PANDEM GR SUPRA FDJ2 VALENTINA PIAZ",
-      "url": "https://diecastsilkroad.com/products/pop-race-pandem-toyota-gr-supra-valentina-piaz-fdj2-45?variant=60584614428753",
-      "price": "\u20b9 1,549"
-    },
-    "88b65238e9d6": {
-      "name": "BMW Z3 Hellrot",
-      "url": "https://diecastsilkroad.com/products/minigt-bmw-z3-hellrot?variant=60583882981457",
-      "price": "\u20b9 1,349"
-    },
-    "80f73b7f41d7": {
-      "name": "Hyundai Ioniq 5N RS-01T Stealth",
-      "url": "https://diecastsilkroad.com/products/minigt-hyundai-ioniq-5-n-rs-01t-stealth?variant=60583881801809",
-      "price": "\u20b9 1,349"
-    },
-    "54f16421edcd": {
-      "name": "Lamborghini Urus Performante Viola Pasifae",
-      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-urus-performante-viola-pasifae?variant=60583797719121",
-      "price": "\u20b9 1,249"
-    },
-    "831175dddc5d": {
-      "name": "Land Rover Defender 110  1998 Camel Trophy Tierra del Fuego CT.24 Italy",
-      "url": "https://diecastsilkroad.com/products/minigt-land-rover-defender-110-camel-trophy-1998-tierra-del-fuego-ct-24-italy?variant=60583771897937",
-      "price": "\u20b9 1,599"
-    },
-    "db30d8ccaf1e": {
-      "name": "Cadillac Eldorado Biarritz 1959 Black",
-      "url": "https://diecastsilkroad.com/products/minigt-cadillac-eldorado-biarritz-1959-black-blister?variant=60583753941073",
-      "price": "\u20b9 1,399"
-    },
-    "124dd0cf7b3d": {
-      "name": "Cadillac Eldorado Biarritz 1959 Black",
-      "url": "https://diecastsilkroad.com/products/minigt-cadillac-eldorado-biarritz-1959-black-box?variant=60583741128785",
-      "price": "\u20b9 1,249"
-    }
-  },
+  "diecastsilkroad": {},
   "_baseline_done": true,
   "_fprint_migrated": true
 }
