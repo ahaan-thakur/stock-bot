@@ -2690,6 +2690,21 @@
     }
   },
   "diecastsilkroad": {
+    "c92ed117d00b": {
+      "name": "PANDEM S2000 DARK CHROME",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-honda-s2000-dark-chrome?variant=62703897051217",
+      "price": "\u20b9 1,699"
+    },
+    "56902de42ddc": {
+      "name": "R34 WAGON DARK CHROME",
+      "url": "https://diecastsilkroad.com/products/pop-race-nissan-r34-wagon-dark-chrome?variant=62703895445585",
+      "price": "\u20b9 1,699"
+    },
+    "5638033c5567": {
+      "name": "NSX-R DARK CHROME",
+      "url": "https://diecastsilkroad.com/products/pop-race-honda-nsx-r-dark-chrome?variant=62703855108177",
+      "price": "\u20b9 1,699"
+    },
     "acc6bd263637": {
       "name": "Porsche 911 GT3 R #8 AO Racing - Winner Suzuka 1000km 2026 - With Pit Board",
       "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-8-ao-racing-winner-suzuka-1000km-2026-with-pit-board?variant=62678045491281",
@@ -2704,21 +2719,6 @@
       "name": "PANDEM E30 BLUE",
       "url": "https://diecastsilkroad.com/products/pop-race-pandem-bmw-e30-blue?variant=60584615641169",
       "price": "\u20b9 1,699"
-    },
-    "3a019fc21858": {
-      "name": "PANDEM GR SUPRA FDJ2 VALENTINA PIAZ",
-      "url": "https://diecastsilkroad.com/products/pop-race-pandem-toyota-gr-supra-valentina-piaz-fdj2-45?variant=60584614428753",
-      "price": "\u20b9 1,549"
-    },
-    "88b65238e9d6": {
-      "name": "BMW Z3 Hellrot",
-      "url": "https://diecastsilkroad.com/products/minigt-bmw-z3-hellrot?variant=60583882981457",
-      "price": "\u20b9 1,349"
-    },
-    "80f73b7f41d7": {
-      "name": "Hyundai Ioniq 5N RS-01T Stealth",
-      "url": "https://diecastsilkroad.com/products/minigt-hyundai-ioniq-5-n-rs-01t-stealth?variant=60583881801809",
-      "price": "\u20b9 1,349"
     }
   },
   "_baseline_done": true,
