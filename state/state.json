@@ -2689,48 +2689,7 @@
       "category": "Pop Race"
     }
   },
-  "diecastsilkroad": {
-    "bb71c6c19881": {
-      "name": "[CASE, Read Description] Nissan Skyline GT-R C-West \"2 Fast 2 Furious\" Brian O'Conner",
-      "url": "https://diecastsilkroad.com/products/case-nissan-skyline-gt-r-c-west-2-fast-2-furious-brian-oconner?variant=62707192660049",
-      "price": "\u20b9 39,576"
-    },
-    "95f67250d5e5": {
-      "name": "Nissan Skyline GT-R C-West \"2 Fast 2 Furious\" Brian O'Conner",
-      "url": "https://diecastsilkroad.com/products/minigt-nissan-skyline-gt-r-r34-c-west-2-fast-2-furious-brian-oconner?variant=62707179913297",
-      "price": "\u20b9 1,699"
-    },
-    "d86a95e6d64a": {
-      "name": "Dodge Charger \"Fast Five\" Dominic Toretto",
-      "url": "https://diecastsilkroad.com/products/minigt-dodge-charger-fast-five-dominic-toretto?variant=62707171131473",
-      "price": "\u20b9 1,549"
-    },
-    "191a955ae57a": {
-      "name": "SINGER DLS TURBO",
-      "url": "https://diecastsilkroad.com/products/pop-race-singer-dls-turbo-dark-chrome-porsche-911?variant=62703902425169",
-      "price": "\u20b9 1,699"
-    },
-    "c92ed117d00b": {
-      "name": "PANDEM S2000 DARK CHROME",
-      "url": "https://diecastsilkroad.com/products/pop-race-pandem-honda-s2000-dark-chrome?variant=62703897051217",
-      "price": "\u20b9 1,699"
-    },
-    "56902de42ddc": {
-      "name": "R34 WAGON DARK CHROME",
-      "url": "https://diecastsilkroad.com/products/pop-race-nissan-r34-wagon-dark-chrome?variant=62703895445585",
-      "price": "\u20b9 1,699"
-    },
-    "5638033c5567": {
-      "name": "NSX-R DARK CHROME",
-      "url": "https://diecastsilkroad.com/products/pop-race-honda-nsx-r-dark-chrome?variant=62703855108177",
-      "price": "\u20b9 1,699"
-    },
-    "acc6bd263637": {
-      "name": "Porsche 911 GT3 R #8 AO Racing - Winner Suzuka 1000km 2026 - With Pit Board",
-      "url": "https://diecastsilkroad.com/products/porsche-911-gt3-r-8-ao-racing-winner-suzuka-1000km-2026-with-pit-board?variant=62678045491281",
-      "price": "TBA"
-    }
-  },
+  "diecastsilkroad": {},
   "_baseline_done": true,
   "_fprint_migrated": true
 }
