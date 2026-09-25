@@ -2690,6 +2690,16 @@
     }
   },
   "diecastsilkroad": {
+    "20d86c84b27f": {
+      "name": "Lamborghini Murcielago (First Generation) - Blue",
+      "url": "https://diecastsilkroad.com/products/lcd-models-lamborghini-murcielago-first-generation-blue?variant=62733377962065",
+      "price": "\u20b9 2,249"
+    },
+    "9ac796e4e4c0": {
+      "name": "Lamborghini Murcielago",
+      "url": "https://diecastsilkroad.com/products/lcd-models-lamborghini-murcielago-first-generation-orange?variant=62733111558225",
+      "price": "\u20b9 2,249"
+    },
     "4a15656f86bc": {
       "name": "BMW M4 GT3 \u2013 TEAM WRT - GTWC 24H SPA 2024",
       "url": "https://diecastsilkroad.com/products/minichamps-bmw-m4-gt3-team-wrt-24h-spa-2024?variant=62732157878353",
@@ -2739,16 +2749,6 @@
       "name": "Bentley Continental GT3  24 Hours of Spa 2019",
       "url": "https://diecastsilkroad.com/products/tarmac-works-bentley-continental-gt3-24-hours-of-spa-2019?variant=62726373539921",
       "price": "\u20b9 2,199"
-    },
-    "b22b80423aa5": {
-      "name": "Porsche 911 GT3 Cup (992) Porsche Carrera Cup Benelux 2024",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-cup-992-carrera-cup-benelux-2024?variant=62726322782289",
-      "price": "\u20b9 2,199"
-    },
-    "bb71c6c19881": {
-      "name": "[CASE, Read Description] Nissan Skyline GT-R C-West \"2 Fast 2 Furious\" Brian O'Conner",
-      "url": "https://diecastsilkroad.com/products/case-nissan-skyline-gt-r-c-west-2-fast-2-furious-brian-oconner?variant=62707192660049",
-      "price": "\u20b9 39,576"
     }
   },
   "_baseline_done": true,
