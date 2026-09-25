@@ -2690,6 +2690,21 @@
     }
   },
   "diecastsilkroad": {
+    "4a15656f86bc": {
+      "name": "BMW M4 GT3 \u2013 TEAM WRT - GTWC 24H SPA 2024",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m4-gt3-team-wrt-24h-spa-2024?variant=62732157878353",
+      "price": "\u20b9 2,999"
+    },
+    "6f2c8aa4a511": {
+      "name": "BMW M4 GT3 \u2013 TEAM WRT - GTWCE MISANO WINNER 2023",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m4-gt3-team-wrt-gtwce-misano-winner-2023?variant=62732156764241",
+      "price": "\u20b9 2,999"
+    },
+    "f0ab2270ec4f": {
+      "name": "M4 GT3 \u2013 TEAM WRT \u2013 24H DUBAI 2023",
+      "url": "https://diecastsilkroad.com/products/minichamps-bmw-m4-gt3-team-wrt-24h-dubai-2023?variant=62732112527441",
+      "price": "\u20b9 2,999"
+    },
     "1743c69be729": {
       "name": "RLC Exclusive sELECTIONs Porsche 959",
       "url": "https://diecastsilkroad.com/products/hot-wheels-rlc-exclusive-selections-porsche-959?variant=62726911328337",
@@ -2734,11 +2749,6 @@
       "name": "[CASE, Read Description] Nissan Skyline GT-R C-West \"2 Fast 2 Furious\" Brian O'Conner",
       "url": "https://diecastsilkroad.com/products/case-nissan-skyline-gt-r-c-west-2-fast-2-furious-brian-oconner?variant=62707192660049",
       "price": "\u20b9 39,576"
-    },
-    "95f67250d5e5": {
-      "name": "Nissan Skyline GT-R C-West \"2 Fast 2 Furious\" Brian O'Conner",
-      "url": "https://diecastsilkroad.com/products/minigt-nissan-skyline-gt-r-r34-c-west-2-fast-2-furious-brian-oconner?variant=62707179913297",
-      "price": "\u20b9 1,699"
     }
   },
   "_baseline_done": true,
