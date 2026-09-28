@@ -2690,6 +2690,21 @@
     }
   },
   "diecastsilkroad": {
+    "0e5520f6d5f5": {
+      "name": "LB-ER34 SUPER SILHOUETTE",
+      "url": "https://diecastsilkroad.com/products/pop-race-lb-er34-super-silhouette-nissan-skyline?variant=62754118139985",
+      "price": "\u20b9 1,799"
+    },
+    "bd4095dd6cb2": {
+      "name": "HONDA ACCORD JTCC 1996 PIAA",
+      "url": "https://diecastsilkroad.com/products/pop-race-honda-accord-jtcc-1996-piaa?variant=62754117812305",
+      "price": "\u20b9 1,699"
+    },
+    "cb5d8b51e67f": {
+      "name": "LAMBORGHINI VENENO - GRIGIO METALLURO",
+      "url": "https://diecastsilkroad.com/products/pop-race-lamborghini-veneno-grigio-metalluro?variant=62754112733265",
+      "price": "\u20b9 1,799"
+    },
     "20d86c84b27f": {
       "name": "Lamborghini Murcielago (First Generation) - Blue",
       "url": "https://diecastsilkroad.com/products/lcd-models-lamborghini-murcielago-first-generation-blue?variant=62733377962065",
@@ -2719,21 +2734,6 @@
       "name": "RLC Exclusive sELECTIONs Porsche 959",
       "url": "https://diecastsilkroad.com/products/hot-wheels-rlc-exclusive-selections-porsche-959?variant=62726911328337",
       "price": "\u20b9 3,899"
-    },
-    "4e2b1772f30e": {
-      "name": "Ferrari 348 Challenge Italy 1993",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-ferrari-348-challenge-italy-1993?variant=62726568738897",
-      "price": "\u20b9 2,399"
-    },
-    "7664820a613d": {
-      "name": "Hyundai i20 N Rally1 Hybrid WRC Central European Rally 2023 Winner",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-hyundai-i20-n-rally1-hybrid-central-european-rally-2023-winner?variant=62726506741841",
-      "price": "\u20b9 2,199"
-    },
-    "a70b12915ff3": {
-      "name": "Toyota GR Yaris Rally2 Japanese Rally Championship 2024",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally2-japanese-rally-championship-2024?variant=62726484328529",
-      "price": "\u20b9 2,199"
     }
   },
   "_baseline_done": true,
