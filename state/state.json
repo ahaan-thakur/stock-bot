@@ -2690,6 +2690,16 @@
     }
   },
   "diecastsilkroad": {
+    "5a3e2a7d35f5": {
+      "name": "Atlassian Williams F1 Team FW48 #55 Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-williams-fw48-55-madrid-gp-2026?variant=62841434079313",
+      "price": "\u20b9 2,249"
+    },
+    "720013ca44ac": {
+      "name": "Atlassian Williams F1 Team FW48 #23 Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-williams-fw48-23-alex-albon-madrid-gp-2026?variant=62841428869201",
+      "price": "\u20b9 2,249"
+    },
     "4bc26c73a44b": {
       "name": "McLaren Mastercard F1 Team MCL40 #1 3rd Madrid GP 2026",
       "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-1-lando-norris-3rd-madrid-gp-2026?variant=62841413238865",
@@ -2739,51 +2749,6 @@
       "name": "McLaren Mastercard F1 Team MCL40 #1 Winner Dutch GP 2026",
       "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-1-lando-norris-winner-dutch-gp-2026?variant=62840760598609",
       "price": "\u20b9 2,799"
-    },
-    "0ff3f009f786": {
-      "name": "BMW M4 GT3 #46 Team WRT - Le Mans 24H 2024",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-le-mans-24h-2024?variant=62794425499729",
-      "price": "\u20b9 2,699"
-    },
-    "816bbeb8e264": {
-      "name": "BMW M4 GT3 #46 Team WRT - 6th 24H Spa 2026",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-6th-24h-spa-2026?variant=62794423566417",
-      "price": "\u20b9 2,699"
-    },
-    "82fcd9b736e6": {
-      "name": "BMW M4 GT3 #46 Team WRT - 3rd Bathurst 12H 2026",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-3rd-bathurst-12h-2026?variant=62794423238737",
-      "price": "\u20b9 2,699"
-    },
-    "61e30c7b9ef5": {
-      "name": "BMW M4 GT3 #46 Team WRT - 24H Spa 2025",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-24h-spa-2025?variant=62794423009361",
-      "price": "\u20b9 2,699"
-    },
-    "e76d6e8790a8": {
-      "name": "BMW M4 GT3 #46 Team WRT - 24H Spa 2024",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-24h-spa-2024?variant=62794420912209",
-      "price": "\u20b9 2,699"
-    },
-    "cd906f8f04b4": {
-      "name": "BMW M4 GT3 #46 Team WRT - 2nd Bathurst 12H 2025",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-2nd-bathurst-12h-2025?variant=62794418716753",
-      "price": "\u20b9 2,699"
-    },
-    "959342ba2d3e": {
-      "name": "BMW M4 LMGT3 #46\u00a0TEAM WRT - Le Mans 24H 2025",
-      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-lmgt3-46-team-wrt-le-mans-24h-2025?variant=62787162144849",
-      "price": "\u20b9 2,699"
-    },
-    "2ed914d54573": {
-      "name": "Porsche 911 GT3 - Rexy 2026 - Petit Le Mans Skeleton - Glowing",
-      "url": "https://diecastsilkroad.com/products/minigt-ao-racing-rexy-skeleton-glowing-petit-le-mans-2026-porsche-911-gt3-r?variant=62769493278801",
-      "price": "\u20b9 4,399"
-    },
-    "e01d8c2309e1": {
-      "name": "Koenigsegg Capsule 01 - Pack",
-      "url": "https://diecastsilkroad.com/products/tarmac-cards-koenigsegg-capsule-01-trading-card-pack?variant=62757028593745",
-      "price": "\u20b9 999"
     }
   },
   "_baseline_done": true,
