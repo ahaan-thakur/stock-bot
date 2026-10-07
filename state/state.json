@@ -2690,6 +2690,56 @@
     }
   },
   "diecastsilkroad": {
+    "4bc26c73a44b": {
+      "name": "McLaren Mastercard F1 Team MCL40 #1 3rd Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-1-lando-norris-3rd-madrid-gp-2026?variant=62841413238865",
+      "price": "\u20b9 2,249"
+    },
+    "199560070d9e": {
+      "name": "Oracle Red Bull Racing RB22 #3 2nd Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-red-bull-rb22-3-max-verstappen-2nd-madrid-gp-2026?variant=62841404850257",
+      "price": "\u20b9 2,249"
+    },
+    "4b9bc91dd753": {
+      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-madrid-gp-2026?variant=62841386467409",
+      "price": "\u20b9 2,249"
+    },
+    "4f5f7e3b3f81": {
+      "name": "McLaren Mastercard F1 Team MCL40 #81 5th Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-81-oscar-piastri-5th-italian-gp-2026?variant=62841376800849",
+      "price": "\u20b9 2,249"
+    },
+    "410fc077755c": {
+      "name": "BWT Alpine Formula One Team A526 #10 Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-alpine-a526-10-pierre-gasly-first-pole-italian-gp-2026?variant=62841338232913",
+      "price": "\u20b9 2,599"
+    },
+    "98bd3a561e59": {
+      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-italian-gp-2026?variant=62841314967633",
+      "price": "\u20b9 2,799"
+    },
+    "c14beba78fe0": {
+      "name": "Aston Martin Aramco F1 Team AMR25 #14 9th Dutch GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-aston-martin-amr25-14-fernando-alonso-9th-dutch-gp-2026?variant=62841282527313",
+      "price": "\u20b9 2,249"
+    },
+    "eecf73f71ecd": {
+      "name": "Red Bull Racing RB22 #30 7th Dutch GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-red-bull-rb22-30-liam-lawson-7th-dutch-gp-2026?variant=62841195069521",
+      "price": "\u20b9 2,249"
+    },
+    "590a140ff1db": {
+      "name": "Visa Cash App Racing Bulls Formula One Team VCARB 03 #22 Dutch GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-racing-bulls-vcarb-03-22-yuki-tsunoda-dutch-gp-2026?variant=62840998658129",
+      "price": "\u20b9 2,249"
+    },
+    "8ced3bfaa30b": {
+      "name": "McLaren Mastercard F1 Team MCL40 #1 Winner Dutch GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-1-lando-norris-winner-dutch-gp-2026?variant=62840760598609",
+      "price": "\u20b9 2,799"
+    },
     "0ff3f009f786": {
       "name": "BMW M4 GT3 #46 Team WRT - Le Mans 24H 2024",
       "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-le-mans-24h-2024?variant=62794425499729",
@@ -2714,6 +2764,26 @@
       "name": "BMW M4 GT3 #46 Team WRT - 24H Spa 2024",
       "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-24h-spa-2024?variant=62794420912209",
       "price": "\u20b9 2,699"
+    },
+    "cd906f8f04b4": {
+      "name": "BMW M4 GT3 #46 Team WRT - 2nd Bathurst 12H 2025",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-gt3-46-team-wrt-2nd-bathurst-12h-2025?variant=62794418716753",
+      "price": "\u20b9 2,699"
+    },
+    "959342ba2d3e": {
+      "name": "BMW M4 LMGT3 #46\u00a0TEAM WRT - Le Mans 24H 2025",
+      "url": "https://diecastsilkroad.com/products/spark-bmw-m4-lmgt3-46-team-wrt-le-mans-24h-2025?variant=62787162144849",
+      "price": "\u20b9 2,699"
+    },
+    "2ed914d54573": {
+      "name": "Porsche 911 GT3 - Rexy 2026 - Petit Le Mans Skeleton - Glowing",
+      "url": "https://diecastsilkroad.com/products/minigt-ao-racing-rexy-skeleton-glowing-petit-le-mans-2026-porsche-911-gt3-r?variant=62769493278801",
+      "price": "\u20b9 4,399"
+    },
+    "e01d8c2309e1": {
+      "name": "Koenigsegg Capsule 01 - Pack",
+      "url": "https://diecastsilkroad.com/products/tarmac-cards-koenigsegg-capsule-01-trading-card-pack?variant=62757028593745",
+      "price": "\u20b9 999"
     }
   },
   "_baseline_done": true,
