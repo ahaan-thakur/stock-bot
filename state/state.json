@@ -2690,6 +2690,56 @@
     }
   },
   "diecastsilkroad": {
+    "76cb25ab1158": {
+      "name": "EVA RT TEST TYPE-01 S15",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-eva-rt-test-type-01-nissan-silvia-s15-blister?variant=62849123090513",
+      "price": "\u20b9 1,799"
+    },
+    "c4ea2e5bfd23": {
+      "name": "EVA RT TEST TYPE-01 S15",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-eva-rt-test-type-01-nissan-silvia-s15-box?variant=62849122402385",
+      "price": "\u20b9 1,699"
+    },
+    "7c35b69a49bc": {
+      "name": "Toyota GR Corolla  HKS",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-corolla-hks-blister?variant=62849122205777",
+      "price": "\u20b9 1,699"
+    },
+    "586e52cd2dc2": {
+      "name": "Toyota GR Corolla  HKS",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-corolla-hks-box?variant=62849112080465",
+      "price": "\u20b9 1,599"
+    },
+    "ba93dc22dfe7": {
+      "name": "Mercedes-Benz AMG GT Black Series Safety Car of British GP 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-british-gp-2025-blister?variant=62849108017233",
+      "price": "\u20b9 1,599"
+    },
+    "3fe8ee8ecee6": {
+      "name": "Mercedes-Benz AMG GT Black Series Safety Car of British GP 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-british-gp-2025-box?variant=62849099759697",
+      "price": "\u20b9 1,499"
+    },
+    "50cdf2a02b64": {
+      "name": "Nissan Skyline (R32) Widebody - Designed by JOSHUA VIDES",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-r32-widebody-joshua-vides?variant=62849075642449",
+      "price": "\u20b9 1,699"
+    },
+    "ee99b8078bb2": {
+      "name": "VERTEX Toyota Soarer JZZ30 - Kuromi",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-vertex-toyota-soarer-jzz30-kuromi?variant=62849058996305",
+      "price": "\u20b9 1,899"
+    },
+    "c8dd9a87ddae": {
+      "name": "Citroen Type H Silver",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-citroen-type-h-silver-blister?variant=62849030717521",
+      "price": "\u20b9 1,299"
+    },
+    "778bab032375": {
+      "name": "Citroen Type H Silver",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-citroen-type-h-silver-box?variant=62849008959569",
+      "price": "\u20b9 1,199"
+    },
     "d3514cdf37cd": {
       "name": "NISMO 400R (BCNR33) Yellow",
       "url": "https://diecastsilkroad.com/products/ignition-model-nismo-400r-bcnr33-yellow-nissan-skyline-gt-r?variant=62848871661649",
@@ -2729,6 +2779,26 @@
       "name": "Oracle Red Bull Racing RB22 #3 2nd Madrid GP 2026",
       "url": "https://diecastsilkroad.com/products/spark-red-bull-rb22-3-max-verstappen-2nd-madrid-gp-2026?variant=62841404850257",
       "price": "\u20b9 2,249"
+    },
+    "4b9bc91dd753": {
+      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Madrid GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-madrid-gp-2026?variant=62841386467409",
+      "price": "\u20b9 2,249"
+    },
+    "4f5f7e3b3f81": {
+      "name": "McLaren Mastercard F1 Team MCL40 #81 5th Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-81-oscar-piastri-5th-italian-gp-2026?variant=62841376800849",
+      "price": "\u20b9 2,249"
+    },
+    "410fc077755c": {
+      "name": "BWT Alpine Formula One Team A526 #10 Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-alpine-a526-10-pierre-gasly-first-pole-italian-gp-2026?variant=62841338232913",
+      "price": "\u20b9 2,599"
+    },
+    "98bd3a561e59": {
+      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Italian GP 2026",
+      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-italian-gp-2026?variant=62841314967633",
+      "price": "\u20b9 2,799"
     }
   },
   "_baseline_done": true,
