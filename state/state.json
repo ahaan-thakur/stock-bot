@@ -2690,6 +2690,26 @@
     }
   },
   "diecastsilkroad": {
+    "d3514cdf37cd": {
+      "name": "NISMO 400R (BCNR33) Yellow",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nismo-400r-bcnr33-yellow-nissan-skyline-gt-r?variant=62848871661649",
+      "price": "\u20b9 2,499"
+    },
+    "d27ae30ebf65": {
+      "name": "NISMO 400R (BCNR33) Blue",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nismo-400r-bcnr33-blue-nissan-skyline-gt-r?variant=62848864747601",
+      "price": "\u20b9 2,499"
+    },
+    "e009d5aeee88": {
+      "name": "RWB 997 GT3 Orange",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-997-gt3-orange-porsche-911-widebody?variant=62848857866321",
+      "price": "\u20b9 2,499"
+    },
+    "3f97bddeeb09": {
+      "name": "RWB 993 Silver",
+      "url": "https://diecastsilkroad.com/products/ignition-model-rwb-993-silver-porsche-911-widebody?variant=62848410878033",
+      "price": "\u20b9 2,499"
+    },
     "5a3e2a7d35f5": {
       "name": "Atlassian Williams F1 Team FW48 #55 Madrid GP 2026",
       "url": "https://diecastsilkroad.com/products/spark-williams-fw48-55-madrid-gp-2026?variant=62841434079313",
@@ -2709,26 +2729,6 @@
       "name": "Oracle Red Bull Racing RB22 #3 2nd Madrid GP 2026",
       "url": "https://diecastsilkroad.com/products/spark-red-bull-rb22-3-max-verstappen-2nd-madrid-gp-2026?variant=62841404850257",
       "price": "\u20b9 2,249"
-    },
-    "4b9bc91dd753": {
-      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Madrid GP 2026",
-      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-madrid-gp-2026?variant=62841386467409",
-      "price": "\u20b9 2,249"
-    },
-    "4f5f7e3b3f81": {
-      "name": "McLaren Mastercard F1 Team MCL40 #81 5th Italian GP 2026",
-      "url": "https://diecastsilkroad.com/products/spark-mclaren-mcl40-81-oscar-piastri-5th-italian-gp-2026?variant=62841376800849",
-      "price": "\u20b9 2,249"
-    },
-    "410fc077755c": {
-      "name": "BWT Alpine Formula One Team A526 #10 Italian GP 2026",
-      "url": "https://diecastsilkroad.com/products/spark-alpine-a526-10-pierre-gasly-first-pole-italian-gp-2026?variant=62841338232913",
-      "price": "\u20b9 2,599"
-    },
-    "98bd3a561e59": {
-      "name": "Mercedes-AMG Petronas Formula 1 Team W17 #12 Winner Italian GP 2026",
-      "url": "https://diecastsilkroad.com/products/spark-mercedes-w17-12-kimi-antonelli-winner-italian-gp-2026?variant=62841314967633",
-      "price": "\u20b9 2,799"
     }
   },
   "_baseline_done": true,
