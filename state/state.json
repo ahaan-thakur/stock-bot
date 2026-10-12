@@ -2690,6 +2690,41 @@
     }
   },
   "diecastsilkroad": {
+    "407f375cc699": {
+      "name": "Mercedes-AMG EQS 53 Blue",
+      "url": "https://diecastsilkroad.com/products/minigt-mercedes-amg-eqs-53-blue?variant=62869434794065",
+      "price": "\u20b9 1,249"
+    },
+    "f4c736cd3af5": {
+      "name": "Toyota 2000GT Pegasus White",
+      "url": "https://diecastsilkroad.com/products/minigt-toyota-2000gt-pegasus-white?variant=62869434499153",
+      "price": "\u20b9 1,249"
+    },
+    "025ba241d2b2": {
+      "name": "Lamborghini Countach LB-WORKS Army Green",
+      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-countach-lb-works-army-green?variant=62869433581649",
+      "price": "\u20b9 1,249"
+    },
+    "0e0b1e5c34dc": {
+      "name": "BMW Z3 Titanium Silver",
+      "url": "https://diecastsilkroad.com/products/minigt-bmw-z3-titanium-silver?variant=62869432533073",
+      "price": "\u20b9 1,349"
+    },
+    "33564384e272": {
+      "name": "Ducati Panigale V4 S Giallo w/ figure",
+      "url": "https://diecastsilkroad.com/products/minigt-ducati-panigale-v4-s-giallo-with-figure?variant=62869418410065",
+      "price": "\u20b9 1,599"
+    },
+    "91267712b306": {
+      "name": "Porsche 911 GT3 RS STAPLE x INOZETEK",
+      "url": "https://diecastsilkroad.com/products/minigt-porsche-911-gt3-rs-staple-x-inozetek?variant=62869418278993",
+      "price": "\u20b9 1,349"
+    },
+    "6f36cc1f6ddb": {
+      "name": "LB-Silhouette WORKS GT NISSAN 35GT-RR Ver.2 INOZETEK Edition",
+      "url": "https://diecastsilkroad.com/products/minigt-lb-silhouette-works-gt-nissan-35gt-rr-ver-2-inozetek?variant=62869314568273",
+      "price": "\u20b9 1,349"
+    },
     "0e6335854925": {
       "name": "Singer DLS Turbo - Purple",
       "url": "https://diecastsilkroad.com/products/pop-race-singer-dls-turbo-purple-porsche-911?variant=62869004910673",
@@ -2704,46 +2739,6 @@
       "name": "Lamborghini Veneno - Verde Ithaca",
       "url": "https://diecastsilkroad.com/products/pop-race-lamborghini-veneno-verde-ithaca?variant=62868768915537",
       "price": "\u20b9 1,699"
-    },
-    "76cb25ab1158": {
-      "name": "EVA RT TEST TYPE-01 S15",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-eva-rt-test-type-01-nissan-silvia-s15-blister?variant=62849123090513",
-      "price": "\u20b9 1,799"
-    },
-    "c4ea2e5bfd23": {
-      "name": "EVA RT TEST TYPE-01 S15",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-eva-rt-test-type-01-nissan-silvia-s15-box?variant=62849122402385",
-      "price": "\u20b9 1,699"
-    },
-    "7c35b69a49bc": {
-      "name": "Toyota GR Corolla  HKS",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-corolla-hks-blister?variant=62849122205777",
-      "price": "\u20b9 1,699"
-    },
-    "586e52cd2dc2": {
-      "name": "Toyota GR Corolla  HKS",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-corolla-hks-box?variant=62849112080465",
-      "price": "\u20b9 1,599"
-    },
-    "ba93dc22dfe7": {
-      "name": "Mercedes-Benz AMG GT Black Series Safety Car of British GP 2025",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-british-gp-2025-blister?variant=62849108017233",
-      "price": "\u20b9 1,599"
-    },
-    "3fe8ee8ecee6": {
-      "name": "Mercedes-Benz AMG GT Black Series Safety Car of British GP 2025",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-amg-gt-black-series-safety-car-british-gp-2025-box?variant=62849099759697",
-      "price": "\u20b9 1,499"
-    },
-    "50cdf2a02b64": {
-      "name": "Nissan Skyline (R32) Widebody - Designed by JOSHUA VIDES",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-r32-widebody-joshua-vides?variant=62849075642449",
-      "price": "\u20b9 1,699"
-    },
-    "ee99b8078bb2": {
-      "name": "VERTEX Toyota Soarer JZZ30 - Kuromi",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-vertex-toyota-soarer-jzz30-kuromi?variant=62849058996305",
-      "price": "\u20b9 1,899"
     }
   },
   "_baseline_done": true,
