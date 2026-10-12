@@ -2690,6 +2690,21 @@
     }
   },
   "diecastsilkroad": {
+    "0e6335854925": {
+      "name": "Singer DLS Turbo - Purple",
+      "url": "https://diecastsilkroad.com/products/pop-race-singer-dls-turbo-purple-porsche-911?variant=62869004910673",
+      "price": "\u20b9 1,599"
+    },
+    "4080c6dec2c8": {
+      "name": "Lamborghini Countach LPI 800-4 - Verde Themis",
+      "url": "https://diecastsilkroad.com/products/pop-race-lamborghini-countach-lpi-800-4-verde-themis?variant=62868932132945",
+      "price": "\u20b9 1,699"
+    },
+    "2e11272920a2": {
+      "name": "Lamborghini Veneno - Verde Ithaca",
+      "url": "https://diecastsilkroad.com/products/pop-race-lamborghini-veneno-verde-ithaca?variant=62868768915537",
+      "price": "\u20b9 1,699"
+    },
     "76cb25ab1158": {
       "name": "EVA RT TEST TYPE-01 S15",
       "url": "https://diecastsilkroad.com/products/tarmac-works-eva-rt-test-type-01-nissan-silvia-s15-blister?variant=62849123090513",
@@ -2729,16 +2744,6 @@
       "name": "VERTEX Toyota Soarer JZZ30 - Kuromi",
       "url": "https://diecastsilkroad.com/products/tarmac-works-vertex-toyota-soarer-jzz30-kuromi?variant=62849058996305",
       "price": "\u20b9 1,899"
-    },
-    "c8dd9a87ddae": {
-      "name": "Citroen Type H Silver",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-citroen-type-h-silver-blister?variant=62849030717521",
-      "price": "\u20b9 1,299"
-    },
-    "778bab032375": {
-      "name": "Citroen Type H Silver",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-citroen-type-h-silver-box?variant=62849008959569",
-      "price": "\u20b9 1,199"
     }
   },
   "_baseline_done": true,
