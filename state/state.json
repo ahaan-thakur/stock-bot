@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "5cc2bee4a71d": {
+      "name": "LB-Silhouette WORKS GT NISSAN 35GT-RR Ver.2 INOZETEK Edition",
+      "url": "https://diecastsilkroad.com/products/minigt-lb-silhouette-works-gt-nissan-35gt-rr-ver-2-inozetek-blister?variant=62946590523473",
+      "price": "\u20b9 1,499"
+    },
     "45c5cba9e7bf": {
       "name": "Porsche 911 GT3 RS STAPLE x INOZETEK",
       "url": "https://diecastsilkroad.com/products/minigt-porsche-911-gt3-rs-staple-x-inozetek-blister?variant=62946338439249",
@@ -2739,11 +2744,6 @@
       "name": "LB-Silhouette WORKS GT NISSAN 35GT-RR Ver.2 INOZETEK Edition",
       "url": "https://diecastsilkroad.com/products/minigt-lb-silhouette-works-gt-nissan-35gt-rr-ver-2-inozetek-box?variant=62869314568273",
       "price": "\u20b9 1,349"
-    },
-    "0e6335854925": {
-      "name": "Singer DLS Turbo - Purple",
-      "url": "https://diecastsilkroad.com/products/pop-race-singer-dls-turbo-purple-porsche-911?variant=62869004910673",
-      "price": "\u20b9 1,599"
     }
   },
   "_baseline_done": true,
