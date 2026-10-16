@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "8715d5068c3c": {
+      "name": "Skyline (R32) Widebody - Sulley - Designed by Jon Sibal",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-nissan-skyline-r32-widebody-sulley-jon-sibal?variant=62962601492561",
+      "price": "\u20b9 2,199"
+    },
     "9e612221cb41": {
       "name": "LB-SUPER SILHOUETTE MAZDA FD3S RX-7 ATHLETE",
       "url": "https://diecastsilkroad.com/products/motorhelix-lb-super-silhouette-mazda-fd3s-rx-7-athlete?variant=62946748825681",
@@ -2743,11 +2748,6 @@
     "cf38bdec04af": {
       "name": "Porsche 911 GT3 RS STAPLE x INOZETEK",
       "url": "https://diecastsilkroad.com/products/minigt-porsche-911-gt3-rs-staple-x-inozetek-box?variant=62869418278993",
-      "price": "\u20b9 1,349"
-    },
-    "63322082c76e": {
-      "name": "LB-Silhouette WORKS GT NISSAN 35GT-RR Ver.2 INOZETEK Edition",
-      "url": "https://diecastsilkroad.com/products/minigt-lb-silhouette-works-gt-nissan-35gt-rr-ver-2-inozetek-box?variant=62869314568273",
       "price": "\u20b9 1,349"
     }
   },
