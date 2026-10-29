@@ -2690,6 +2690,16 @@
     }
   },
   "diecastsilkroad": {
+    "9e718a38c84d": {
+      "name": "INOZETEK x Liberty Walk R32 Set 2026 Show Edition",
+      "url": "https://diecastsilkroad.com/products/minigt-inozetek-x-liberty-walk-nissan-skyline-r32-set-2026-show-edition?variant=63335102414929",
+      "price": "\u20b9 4,199"
+    },
+    "bfe71d5c7ebb": {
+      "name": "INOZETEK x TBC Set 2026 Show Edition",
+      "url": "https://diecastsilkroad.com/products/minigt-inozetek-x-tbc-set-2026-show-edition?variant=63335075020881",
+      "price": "\u20b9 4,199"
+    },
     "5ebbf78a1c42": {
       "name": "BMW M3 Touring 24H N\u00fcrburgring Schubert Motorsport #81",
       "url": "https://diecastsilkroad.com/products/almost-real-bmw-m3-touring-24h-nurburgring-schubert-motorsport-81?variant=63334847152209",
@@ -2744,16 +2754,6 @@
       "name": "Mercedes-AMG GT3 EVO - UNO Racing #98 - China GT Race #2",
       "url": "https://diecastsilkroad.com/products/pop-race-mercedes-amg-gt3-evo-98-uno-racing-china-gt-race-2?variant=63177035284561",
       "price": "\u20b9 1,799"
-    },
-    "da9aa71e2d3a": {
-      "name": "Mercedes-AMG GT3 EVO - UNO Racing #71 - China GT Race #2",
-      "url": "https://diecastsilkroad.com/products/pop-race-mercedes-amg-gt3-evo-71-uno-racing-china-gt-race-2?variant=63177014345809",
-      "price": "\u20b9 1,799"
-    },
-    "1f8c51b1edbb": {
-      "name": "LB-WORKS Nissan GT-R R35 Type 2 White",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-nissan-gt-r-r35-type-2-white?variant=63176583315537",
-      "price": "\u20b9 3,899"
     }
   },
   "_baseline_done": true,
