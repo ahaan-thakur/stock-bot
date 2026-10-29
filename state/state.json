@@ -2690,6 +2690,31 @@
     }
   },
   "diecastsilkroad": {
+    "9c0b7fdc55df": {
+      "name": "PANDEM 620 GREY",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-datsun-620-grey?variant=63335265075281",
+      "price": "\u20b9 1,599"
+    },
+    "118a61d15209": {
+      "name": "PANDEM EG6 WHITE RED",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-honda-civic-eg6-white-red?variant=63335264682065",
+      "price": "\u20b9 1,599"
+    },
+    "9997e51320e2": {
+      "name": "PANDEM POCKET BUNNY 34 PURPLE",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-pocket-bunny-34-purple-suzuki-twin-r34?variant=63335260487761",
+      "price": "\u20b9 1,599"
+    },
+    "4a352e568201": {
+      "name": "PANDEM POCKET BUNNY 32 YELLOW",
+      "url": "https://diecastsilkroad.com/products/pop-race-pandem-pocket-bunny-32-yellow-suzuki-twin-r32?variant=63335257374801",
+      "price": "\u20b9 1,599"
+    },
+    "00ebefb4295a": {
+      "name": "RWB 930 SILVER",
+      "url": "https://diecastsilkroad.com/products/pop-race-rwb-930-silver-porsche-911-widebody?variant=63335236632657",
+      "price": "\u20b9 1,699"
+    },
     "9e718a38c84d": {
       "name": "INOZETEK x Liberty Walk R32 Set 2026 Show Edition",
       "url": "https://diecastsilkroad.com/products/minigt-inozetek-x-liberty-walk-nissan-skyline-r32-set-2026-show-edition?variant=63335102414929",
@@ -2714,46 +2739,6 @@
       "name": "Nissan Skyline GT-R (R34) Custom Halloween - HCFC 2026",
       "url": "https://diecastsilkroad.com/products/motorhelix-nissan-skyline-gt-r-r34-custom-halloween-hcfc-2026?variant=63242175283281",
       "price": "\u20b9 3,499"
-    },
-    "78d375ebdf72": {
-      "name": "Porsche 911 GT3 R (992) #9 Bingo Racing with LM Corsa 2026 Japan Cup Sugo Race 2 Winner",
-      "url": "https://diecastsilkroad.com/products/minigt-porsche-911-gt3-r-992-9-bingo-racing-lm-corsa-japan-cup-sugo-race-2-winner?variant=63239789477969",
-      "price": "\u20b9 1,749"
-    },
-    "5da213cf4c96": {
-      "name": "Aston Martin Valkyrie - Escaping White",
-      "url": "https://diecastsilkroad.com/products/minigt-aston-martin-valkyrie-escaping-white?variant=63239788462161",
-      "price": "\u20b9 1,249"
-    },
-    "0baec206f11e": {
-      "name": "Chevrolet Corvette ZR1 - Torch Red",
-      "url": "https://diecastsilkroad.com/products/minigt-chevrolet-corvette-zr1-torch-red?variant=63239787413585",
-      "price": "\u20b9 1,249"
-    },
-    "596b7ab42146": {
-      "name": "Mazda MX-5 (NA) - Pandem Classic Red",
-      "url": "https://diecastsilkroad.com/products/minigt-mazda-mx-5-na-pandem-classic-red?variant=63239784300625",
-      "price": "\u20b9 1,249"
-    },
-    "74599f4ece7c": {
-      "name": "Honda Prelude - Moonlit White Pearl",
-      "url": "https://diecastsilkroad.com/products/minigt-honda-prelude-moonlit-white-pearl?variant=63239605452881",
-      "price": "\u20b9 1,249"
-    },
-    "966e01e14eb7": {
-      "name": "LB\u2605WORKS Lamborghini Hurac\u00e1n GT - Ruby Purple",
-      "url": "https://diecastsilkroad.com/products/minigt-lb-works-lamborghini-huracan-gt-ruby-purple?variant=63239205617745",
-      "price": "\u20b9 1,349"
-    },
-    "a2330a8f0a07": {
-      "name": "Elite 64 Mercedes-AMG ONE",
-      "url": "https://diecastsilkroad.com/products/hot-wheels-elite-64-mercedes-amg-one?variant=63238844612689",
-      "price": "\u20b9 2,799"
-    },
-    "24260a09ace9": {
-      "name": "Mercedes-AMG GT3 EVO - UNO Racing #98 - China GT Race #2",
-      "url": "https://diecastsilkroad.com/products/pop-race-mercedes-amg-gt3-evo-98-uno-racing-china-gt-race-2?variant=63177035284561",
-      "price": "\u20b9 1,799"
     }
   },
   "_baseline_done": true,
