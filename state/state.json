@@ -2690,6 +2690,36 @@
     }
   },
   "diecastsilkroad": {
+    "0fa3b21b456e": {
+      "name": "Ferrari 458 Italia GT3 - Red",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-ferrari-458-italia-gt3-red?variant=63335575453777",
+      "price": "\u20b9 2,099"
+    },
+    "1b1789b0b17b": {
+      "name": "Toyota GR YARIS Rally1 HYBRID - Rallye Monte-Carlo 2022",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally1-hybrid-rallye-monte-carlo-2022?variant=63335503364177",
+      "price": "\u20b9 2,099"
+    },
+    "3ea989713fe5": {
+      "name": "Porsche 911 GT3 R - N\u00fcrburgring 24h 2018 Winner",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-912-nurburgring-24h-2018-winner?variant=63335473348689",
+      "price": "\u20b9 2,099"
+    },
+    "9359ec134787": {
+      "name": "Porsche 911 GT3 R - N\u00fcrburgring 24h 2025",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-nurburgring-24h-2025?variant=63335447560273",
+      "price": "\u20b9 2,099"
+    },
+    "fe8c6ae7562a": {
+      "name": "Mercedes-Benz SLS AMG GT3 - N\u00fcrburgring 24h 2015",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-gt3-nurburgring-24h-2015?variant=63335422754897",
+      "price": "\u20b9 2,099"
+    },
+    "c6fcaa3c2234": {
+      "name": "Audi Quattro A2 Gr.B Rally - Rally Argentina 1983 Winner",
+      "url": "https://diecastsilkroad.com/products/tarmac-works-audi-quattro-a2-group-b-rally-argentina-1983-winner?variant=63335383924817",
+      "price": "\u20b9 2,099"
+    },
     "9c0b7fdc55df": {
       "name": "PANDEM 620 GREY",
       "url": "https://diecastsilkroad.com/products/pop-race-pandem-datsun-620-grey?variant=63335265075281",
@@ -2719,26 +2749,6 @@
       "name": "INOZETEK x Liberty Walk R32 Set 2026 Show Edition",
       "url": "https://diecastsilkroad.com/products/minigt-inozetek-x-liberty-walk-nissan-skyline-r32-set-2026-show-edition?variant=63335102414929",
       "price": "\u20b9 4,199"
-    },
-    "bfe71d5c7ebb": {
-      "name": "INOZETEK x TBC Set 2026 Show Edition",
-      "url": "https://diecastsilkroad.com/products/minigt-inozetek-x-tbc-set-2026-show-edition?variant=63335075020881",
-      "price": "\u20b9 4,199"
-    },
-    "5ebbf78a1c42": {
-      "name": "BMW M3 Touring 24H N\u00fcrburgring Schubert Motorsport #81",
-      "url": "https://diecastsilkroad.com/products/almost-real-bmw-m3-touring-24h-nurburgring-schubert-motorsport-81?variant=63334847152209",
-      "price": "\u20b9 2,499"
-    },
-    "500bdb17ac96": {
-      "name": "RWB 993 Custom Halloween - HCFC 2026",
-      "url": "https://diecastsilkroad.com/products/motorhelix-rwb-993-custom-halloween-hcfc-2026-porsche-911?variant=63242276765777",
-      "price": "\u20b9 2,999"
-    },
-    "7dd22a6e05da": {
-      "name": "Nissan Skyline GT-R (R34) Custom Halloween - HCFC 2026",
-      "url": "https://diecastsilkroad.com/products/motorhelix-nissan-skyline-gt-r-r34-custom-halloween-hcfc-2026?variant=63242175283281",
-      "price": "\u20b9 3,499"
     }
   },
   "_baseline_done": true,
