@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "5ebbf78a1c42": {
+      "name": "BMW M3 Touring 24H N\u00fcrburgring Schubert Motorsport #81",
+      "url": "https://diecastsilkroad.com/products/almost-real-bmw-m3-touring-24h-nurburgring-schubert-motorsport-81?variant=63334847152209",
+      "price": "\u20b9 2,499"
+    },
     "500bdb17ac96": {
       "name": "RWB 993 Custom Halloween - HCFC 2026",
       "url": "https://diecastsilkroad.com/products/motorhelix-rwb-993-custom-halloween-hcfc-2026-porsche-911?variant=63242276765777",
@@ -2749,16 +2754,6 @@
       "name": "LB-WORKS Nissan GT-R R35 Type 2 White",
       "url": "https://diecastsilkroad.com/products/tarmac-works-lb-works-nissan-gt-r-r35-type-2-white?variant=63176583315537",
       "price": "\u20b9 3,899"
-    },
-    "acfcea667b4a": {
-      "name": "LB-KAIDO WORKS Nissan R32 Skyline - CLDC Special",
-      "url": "https://diecastsilkroad.com/products/lb-kaido-works-nissan-r32-skyline-cldc-special?variant=63176565063761",
-      "price": "\u20b9 2,699"
-    },
-    "2e4523816fe6": {
-      "name": "Porsche 911 GT3 R #22 - 2026 China GT Ningbo",
-      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-22-china-gt-ningbo-2026?variant=63137116946513",
-      "price": "\u20b9 2,499"
     }
   },
   "_baseline_done": true,
