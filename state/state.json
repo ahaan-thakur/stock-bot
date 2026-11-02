@@ -2690,6 +2690,26 @@
     }
   },
   "diecastsilkroad": {
+    "2d2d47da7c89": {
+      "name": "Ferrari F80 - Rosso Corsa",
+      "url": "https://diecastsilkroad.com/products/bbr-ferrari-f80-rosso-corsa?variant=63376121757777",
+      "price": "\u20b9 2,399"
+    },
+    "32ca85ef9fd2": {
+      "name": "Ferrari 599 XX EVO #512",
+      "url": "https://diecastsilkroad.com/products/bbr-ferrari-599xx-evo-512?variant=63376092463185",
+      "price": "\u20b9 2,399"
+    },
+    "0a4cd31eb1b4": {
+      "name": "Ferrari 296 - Speciale Piloti",
+      "url": "https://diecastsilkroad.com/products/bbr-ferrari-296-speciale-piloti?variant=63376075161681",
+      "price": "\u20b9 2,399"
+    },
+    "332694afca6a": {
+      "name": "Ferrari F50 - Rosso Corsa - Open Top",
+      "url": "https://diecastsilkroad.com/products/bbr-ferrari-f50-rosso-corsa-open-top?variant=63376067395665",
+      "price": "\u20b9 2,399"
+    },
     "844cec579ce6": {
       "name": "Ferrari F80 - APAxpo 2026",
       "url": "https://diecastsilkroad.com/products/arbox-x-bbr-ferrari-f80-apaxpo-2026-exclusive?variant=63375663038545",
@@ -2719,36 +2739,6 @@
       "name": "ISUZU KV100 - Aape x INOZETEK x TBC",
       "url": "https://diecastsilkroad.com/products/paddock64-isuzu-kv100-aape-x-inozetek-x-tbc?variant=63375419965521",
       "price": "\u20b9 8,499"
-    },
-    "0fa3b21b456e": {
-      "name": "Ferrari 458 Italia GT3 - Red",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-ferrari-458-italia-gt3-red?variant=63335575453777",
-      "price": "\u20b9 2,099"
-    },
-    "1b1789b0b17b": {
-      "name": "Toyota GR YARIS Rally1 HYBRID - Rallye Monte-Carlo 2022",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-toyota-gr-yaris-rally1-hybrid-rallye-monte-carlo-2022?variant=63335503364177",
-      "price": "\u20b9 2,099"
-    },
-    "3ea989713fe5": {
-      "name": "Porsche 911 GT3 R - N\u00fcrburgring 24h 2018 Winner",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-912-nurburgring-24h-2018-winner?variant=63335473348689",
-      "price": "\u20b9 2,099"
-    },
-    "9359ec134787": {
-      "name": "Porsche 911 GT3 R - N\u00fcrburgring 24h 2025",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-porsche-911-gt3-r-nurburgring-24h-2025?variant=63335447560273",
-      "price": "\u20b9 2,099"
-    },
-    "fe8c6ae7562a": {
-      "name": "Mercedes-Benz SLS AMG GT3 - N\u00fcrburgring 24h 2015",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mercedes-benz-sls-amg-gt3-nurburgring-24h-2015?variant=63335422754897",
-      "price": "\u20b9 2,099"
-    },
-    "c6fcaa3c2234": {
-      "name": "Audi Quattro A2 Gr.B Rally - Rally Argentina 1983 Winner",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-audi-quattro-a2-group-b-rally-argentina-1983-winner?variant=63335383924817",
-      "price": "\u20b9 2,099"
     }
   },
   "_baseline_done": true,
