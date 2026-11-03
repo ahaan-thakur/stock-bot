@@ -2690,6 +2690,41 @@
     }
   },
   "diecastsilkroad": {
+    "b17bd871b5d9": {
+      "name": "RWB 964 \"INNO x BLACK CROW\"",
+      "url": "https://diecastsilkroad.com/products/inno64-rwb-964-inno-x-black-crow-porsche-911-widebody?variant=63390162878545",
+      "price": "\u20b9 2,249"
+    },
+    "1d1ad179853c": {
+      "name": "AUTOBACS ZL86 \"Zen Low x Ayrton Low\"",
+      "url": "https://diecastsilkroad.com/products/inno64-autobacs-toyota-86-zl86-zen-low-x-ayrton-low?variant=63390132502609",
+      "price": "\u20b9 2,149"
+    },
+    "57596910e08c": {
+      "name": "PANDEM ROCKET BUNNY \"POCKET BUNNY R34\" Midnight Purple",
+      "url": "https://diecastsilkroad.com/products/inno64-pandem-pocket-bunny-r34-midnight-purple-suzuki-twin?variant=63390124376145",
+      "price": "\u20b9 2,149"
+    },
+    "d4d8d6f40b4d": {
+      "name": "TOP SECRET R34 GT-R \"TOP SECRET 2001\"",
+      "url": "https://diecastsilkroad.com/products/inno64-top-secret-nissan-skyline-r34-gt-r-2001?variant=63390110318673",
+      "price": "\u20b9 2,149"
+    },
+    "c4a4a1eb5b99": {
+      "name": "DARWIN PRO AMG GT IMP Design",
+      "url": "https://diecastsilkroad.com/products/inno64-darwinpro-mercedes-amg-gt-imp-design?variant=63390099701841",
+      "price": "\u20b9 2,149"
+    },
+    "a409885fbdec": {
+      "name": "LIBERTY WALK (LB-Works) 2000 GT-R (KPGC110) \"Kenmeri\"",
+      "url": "https://diecastsilkroad.com/products/inno64-liberty-walk-nissan-skyline-2000gt-r-kpgc110-kenmeri?variant=63390085709905",
+      "price": "\u20b9 2,399"
+    },
+    "7173560d0138": {
+      "name": "MAD MIKE P1 GTR-X\"MADMAC\" Drift Car",
+      "url": "https://diecastsilkroad.com/products/inno64-mad-mike-mclaren-p1-gtr-x-madmac-drift-car?variant=63390051369041",
+      "price": "\u20b9 2,199"
+    },
     "a6718b3bbb45": {
       "name": "RWB 997 Orange Burning Flame",
       "url": "https://diecastsilkroad.com/products/inno64-rwb-997-orange-burning-flame-porsche-911-widebody?variant=63389350920273",
@@ -2709,41 +2744,6 @@
       "name": "Porsche 911 GT3 R 2026 China GT Shanghai - Absolute Racing #22 Bobshark",
       "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-22-absolute-racing-bobshark-china-gt-shanghai-2026?variant=63382463905873",
       "price": "\u20b9 2,499"
-    },
-    "2d2d47da7c89": {
-      "name": "Ferrari F80 - Rosso Corsa",
-      "url": "https://diecastsilkroad.com/products/bbr-ferrari-f80-rosso-corsa?variant=63376121757777",
-      "price": "\u20b9 2,399"
-    },
-    "32ca85ef9fd2": {
-      "name": "Ferrari 599 XX EVO #512",
-      "url": "https://diecastsilkroad.com/products/bbr-ferrari-599xx-evo-512?variant=63376092463185",
-      "price": "\u20b9 2,399"
-    },
-    "0a4cd31eb1b4": {
-      "name": "Ferrari 296 - Speciale Piloti",
-      "url": "https://diecastsilkroad.com/products/bbr-ferrari-296-speciale-piloti?variant=63376075161681",
-      "price": "\u20b9 2,399"
-    },
-    "332694afca6a": {
-      "name": "Ferrari F50 - Rosso Corsa - Open Top",
-      "url": "https://diecastsilkroad.com/products/bbr-ferrari-f50-rosso-corsa-open-top?variant=63376067395665",
-      "price": "\u20b9 2,399"
-    },
-    "844cec579ce6": {
-      "name": "Ferrari F80 - APAxpo 2026",
-      "url": "https://diecastsilkroad.com/products/arbox-x-bbr-ferrari-f80-apaxpo-2026-exclusive?variant=63375663038545",
-      "price": "\u20b9 7,299"
-    },
-    "3c90261d3dcb": {
-      "name": "Keychain - Aape x INOZETEK x TBC",
-      "url": "https://diecastsilkroad.com/products/aape-x-inozetek-x-tbc-keychain?variant=63375538847825",
-      "price": "\u20b9 999"
-    },
-    "dcca1ae2f570": {
-      "name": "15CM The Boring RC Bin - Aape x INOZETEK x TBC",
-      "url": "https://diecastsilkroad.com/products/aape-x-inozetek-x-tbc-15cm-the-boring-rc-bin?variant=63375525216337",
-      "price": "\u20b9 7,499"
     }
   },
   "_baseline_done": true,
