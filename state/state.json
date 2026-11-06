@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "188cc90f04bb": {
+      "name": "Chijin Rex - AO Exclusive",
+      "url": "https://diecastsilkroad.com/products/spark-ao-racing-chijin-rex-porsche-911-gt3-r-8-macau-gt-world-cup-2026?variant=63435705647185",
+      "price": "\u20b9 3,299"
+    },
     "47ce4ca0e08a": {
       "name": "VERTEX Toyota Aristo JZS161 - Nob Taniguchi Special Spec. - IMX 2026",
       "url": "https://diecastsilkroad.com/products/tarmac-works-vertex-toyota-aristo-jzs161-nob-taniguchi-imx-2026?variant=63434152673361",
@@ -2739,11 +2744,6 @@
       "name": "RWB 964 \"INNO x BLACK CROW\"",
       "url": "https://diecastsilkroad.com/products/inno64-rwb-964-inno-x-black-crow-porsche-911-widebody?variant=63390162878545",
       "price": "\u20b9 2,249"
-    },
-    "1d1ad179853c": {
-      "name": "AUTOBACS ZL86 \"Zen Low x Ayrton Low\"",
-      "url": "https://diecastsilkroad.com/products/inno64-autobacs-toyota-86-zl86-zen-low-x-ayrton-low?variant=63390132502609",
-      "price": "\u20b9 2,149"
     }
   },
   "_baseline_done": true,
