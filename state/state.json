@@ -2690,6 +2690,36 @@
     }
   },
   "diecastsilkroad": {
+    "e76b6c7373a0": {
+      "name": "NISMO 400R (BCNR33) Purple Metallic",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nismo-400r-bcnr33-purple-metallic-nissan-skyline-gt-r?variant=63457849835601",
+      "price": "\u20b9 2,399"
+    },
+    "9c4e40eb5bd3": {
+      "name": "NISMO 400R (BCNR33) Red",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nismo-400r-bcnr33-red-nissan-skyline-gt-r?variant=63457849770065",
+      "price": "\u20b9 2,399"
+    },
+    "66795d5c4a21": {
+      "name": "Nissan Skyline GT-R Mine's (R34) Midnight Purple",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-midnight-purple?variant=63457849704529",
+      "price": "\u20b9 2,399"
+    },
+    "a4bfa66bc5d1": {
+      "name": "Nissan Skyline GT-R Mine's (R34) Millennium Jade",
+      "url": "https://diecastsilkroad.com/products/ignition-model-nissan-skyline-gt-r-mines-r34-millennium-jade?variant=63457849147473",
+      "price": "\u20b9 2,399"
+    },
+    "b1988d6ad5de": {
+      "name": "PANDEM R35 GT-R White/Purple Metallic (Color-Shifting)",
+      "url": "https://diecastsilkroad.com/products/ignition-model-pandem-r35-gt-r-white-purple-metallic-color-shifting-nissan-gt-r?variant=63457849081937",
+      "price": "\u20b9 2,399"
+    },
+    "3734764367d4": {
+      "name": "PANDEM R35 GT-R Purple/Green Metallic (Color-Shifting)",
+      "url": "https://diecastsilkroad.com/products/ignition-model-pandem-r35-gt-r-purple-green-metallic-color-shifting-nissan-gt-r?variant=63457849016401",
+      "price": "\u20b9 2,399"
+    },
     "7b9e69e4d284": {
       "name": "Honda S2000 J'S Racing - MAOU",
       "url": "https://diecastsilkroad.com/products/pop-race-honda-s2000-js-racing-maou?variant=63456436846673",
@@ -2739,26 +2769,6 @@
       "name": "Citroen Type H - Gelati Motta",
       "url": "https://diecastsilkroad.com/products/tarmac-works-citroen-type-h-gelati-motta-box?variant=63456181190737",
       "price": "\u20b9 1,399"
-    },
-    "243dd2fd838d": {
-      "name": "Mitsubishi Lancer Evolution WRC - Rallye Sanremo 2001",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-wrc-rallye-sanremo-2001-blister?variant=63456181125201",
-      "price": "\u20b9 1,499"
-    },
-    "089dd4f3bd97": {
-      "name": "Mitsubishi Lancer Evolution WRC - Rallye Sanremo 2001",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-wrc-rallye-sanremo-2001-box?variant=63456181026897",
-      "price": "\u20b9 1,399"
-    },
-    "24d9f52b5671": {
-      "name": "Mitsubishi Lancer Evolution VII GSR - Yellow",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-vii-gsr-yellow-blister?variant=63456180961361",
-      "price": "\u20b9 1,299"
-    },
-    "1cfa05fcbe50": {
-      "name": "Mitsubishi Lancer Evolution VII GSR - Yellow",
-      "url": "https://diecastsilkroad.com/products/tarmac-works-mitsubishi-lancer-evolution-vii-gsr-yellow-box?variant=63456180895825",
-      "price": "\u20b9 1,199"
     }
   },
   "_baseline_done": true,
