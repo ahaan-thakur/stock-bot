@@ -2689,58 +2689,7 @@
       "category": "Pop Race"
     }
   },
-  "diecastsilkroad": {
-    "04834983aa66": {
-      "name": "Porsche 911 GT3 R 2026 GT World Challenge Asia Fuji - Absolute Racing #911 EVAR",
-      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-911-absolute-racing-evar-gtwca-fuji-2026?variant=63468589023313",
-      "price": "\u20b9 2,599"
-    },
-    "c5f930bcc4ce": {
-      "name": "Porsche 911 GT3 R 2026 GT World Challenge Asia Shanghai - Absolute Racing #918 White Rabbit",
-      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-918-absolute-racing-white-rabbit-gtwca-shanghai-2026?variant=63468583845969",
-      "price": "\u20b9 2,599"
-    },
-    "f727a9468189": {
-      "name": "BMW M5 (G90) Borusan Turkish Blue",
-      "url": "https://diecastsilkroad.com/products/minigt-bmw-m5-g90-borusan-turkish-blue-blister?variant=63459380101201",
-      "price": "\u20b9 1,349"
-    },
-    "fff1efac397b": {
-      "name": "Lamborghini Huracan GT3 EVO2 #78 Forte Racing  2025 IMSA Daytona 24 Hrs",
-      "url": "https://diecastsilkroad.com/products/minigt-lamborghini-huracan-gt3-evo2-78-forte-racing-daytona-24h-2025-blister?variant=63459377053777",
-      "price": "\u20b9 1,699"
-    },
-    "3eafaacec948": {
-      "name": "Jaguar C-X75 Satin Grey",
-      "url": "https://diecastsilkroad.com/products/minigt-jaguar-c-x75-satin-grey-blister?variant=63459258073169",
-      "price": "\u20b9 1,349"
-    },
-    "c853b6330390": {
-      "name": "Aston Martin Valkyrie Cobalt Blue",
-      "url": "https://diecastsilkroad.com/products/minigt-aston-martin-valkyrie-cobalt-blue-blister?variant=63459256303697",
-      "price": "\u20b9 1,349"
-    },
-    "a3f413469880": {
-      "name": "BMW M4 GT3 EVO #33 610 Racing 2026 China GT Shanghai",
-      "url": "https://diecastsilkroad.com/products/minigt-bmw-m4-gt3-evo-33-610-racing-china-gt-shanghai-2026-blister?variant=63459228123217",
-      "price": "\u20b9 1,699"
-    },
-    "563f4417a2da": {
-      "name": "#24 NASCAR Next Gen Garage 56 Chevrolet Camaro ZL1 Prepared by Hendrick Motorsports 2023 24hrs of Le Mans",
-      "url": "https://diecastsilkroad.com/products/minigt-nascar-next-gen-garage-56-chevrolet-camaro-zl1-le-mans-2023-blister",
-      "price": "\u20b9 1,699"
-    },
-    "779eaa5464f1": {
-      "name": "BMW M5 (G90) Borusan Turkish Blue",
-      "url": "https://diecastsilkroad.com/products/minigt-bmw-m5-g90-borusan-turkish-blue-box?variant=63459165339729",
-      "price": "\u20b9 1,199"
-    },
-    "fc271e9af612": {
-      "name": "#24 NASCAR Next Gen Garage 56 Chevrolet Camaro ZL1 Prepared by Hendrick Motorsports 2023 24hrs of Le Mans",
-      "url": "https://diecastsilkroad.com/products/minigt-nascar-next-gen-garage-56-chevrolet-camaro-zl1-le-mans-2023-box",
-      "price": "\u20b9 1,599"
-    }
-  },
+  "diecastsilkroad": {},
   "_baseline_done": true,
   "_fprint_migrated": true
 }
