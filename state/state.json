@@ -2690,6 +2690,11 @@
     }
   },
   "diecastsilkroad": {
+    "5cc2f7041477": {
+      "name": "Porsche 911 GT3 Cup 2026 China GT Ningbo - 610 Racing #27",
+      "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-cup-27-610-racing-china-gt-ningbo-2026?variant=63490866708561",
+      "price": "\u20b9 2,499"
+    },
     "04834983aa66": {
       "name": "Porsche 911 GT3 R 2026 GT World Challenge Asia Fuji - Absolute Racing #911 EVAR",
       "url": "https://diecastsilkroad.com/products/almost-real-porsche-911-gt3-r-911-absolute-racing-evar-gtwca-fuji-2026?variant=63468589023313",
@@ -2725,15 +2730,15 @@
       "url": "https://diecastsilkroad.com/products/minigt-bmw-m4-gt3-evo-33-610-racing-china-gt-shanghai-2026-blister?variant=63459228123217",
       "price": "\u20b9 1,699"
     },
-    "563f4417a2da": {
-      "name": "#24 NASCAR Next Gen Garage 56 Chevrolet Camaro ZL1 Prepared by Hendrick Motorsports 2023 24hrs of Le Mans",
-      "url": "https://diecastsilkroad.com/products/minigt-nascar-next-gen-garage-56-chevrolet-camaro-zl1-le-mans-2023-blister",
-      "price": "\u20b9 1,699"
-    },
     "fc271e9af612": {
       "name": "#24 NASCAR Next Gen Garage 56 Chevrolet Camaro ZL1 Prepared by Hendrick Motorsports 2023 24hrs of Le Mans",
       "url": "https://diecastsilkroad.com/products/minigt-nascar-next-gen-garage-56-chevrolet-camaro-zl1-le-mans-2023-box",
       "price": "\u20b9 1,599"
+    },
+    "563f4417a2da": {
+      "name": "#24 NASCAR Next Gen Garage 56 Chevrolet Camaro ZL1 Prepared by Hendrick Motorsports 2023 24hrs of Le Mans",
+      "url": "https://diecastsilkroad.com/products/minigt-nascar-next-gen-garage-56-chevrolet-camaro-zl1-le-mans-2023-blister",
+      "price": "\u20b9 1,699"
     }
   },
   "_baseline_done": true,
